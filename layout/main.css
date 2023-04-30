@@ -302,6 +302,9 @@
   font-weight: 500;
   font-size: 1.5rem;
 }
+.navbar__title img {
+  width: 1.5rem;
+}
 
 header nav {
   min-height: 10vh;
@@ -566,25 +569,23 @@ header .aref {
   justify-content: space-around;
   align-items: center;
 }
-
-.hero__left h2 {
+.hero__section .hero__left h2 {
   color: var(--light-color);
   letter-spacing: 0.05rem;
   line-height: 2rem;
+  font-size: 2rem;
 }
-.hero__left h2 span {
+.hero__section .hero__left h2 span {
   font-size: 2rem;
   color: var(--lightpurple-color);
 }
-
-.hero__left p {
+.hero__section .hero__left p {
   padding-top: 0.5rem;
-  color: var(--secondary-color);
+  color: #adadb0;
   font-size: 0.7rem;
   font-weight: 100;
 }
-
-.hero__left button {
+.hero__section .hero__left button {
   margin-top: 1rem;
 }
 
@@ -1504,21 +1505,13 @@ i:hover {
 /* ***************************** Sticky ************************************ */
 .social_sticky--total {
   position: fixed;
-  padding: 0.3rem 0.3rem;
-  left: 0.2rem;
-  top: 8rem;
+  padding: 0.5rem 0.3rem;
+  left: 1rem;
+  top: 11rem;
   border-radius: 1rem;
   z-index: 1;
-  box-shadow: 0.2rem 0.2rem 0.2rem var(--dark-color);
-  transform-origin: left;
-  border-right: 2px solid var(--lightpurple-color);
   transition: all 0.2s ease-in-out;
-  background-color: var(--primary-color);
-}
-@media only screen and (max-width: 768px) {
-  .social_sticky--total {
-    display: none;
-  }
+  background-color: #343444;
 }
 
 .social_sticky--total .social--total {
@@ -1531,7 +1524,7 @@ i:hover {
 
 .social_sticky--total .social--total i {
   font-size: 0.8rem;
-  color: var(--light-color);
+  padding: 0.1rem 0;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }

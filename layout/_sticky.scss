@@ -1,39 +1,32 @@
 /* ***************************** Sticky ************************************ */
 .social_sticky--total {
-	position: fixed;
-	padding: 0.3rem 0.3rem;
-	left: 0.2rem;
-	top: 8rem;
-	border-radius: 1rem;
-	z-index: 1;
-	box-shadow: 0.2rem 0.2rem 0.2rem var(--dark-color);
-	transform-origin: left;
-	border-right: 2px solid var(--lightpurple-color);
-	transition: all 0.2s ease-in-out;
-	background-color: var(--primary-color);
-
-	@media only screen and (max-width: 768px) {
-		display: none;
-	}
+  position: fixed;
+  padding: 0.5rem 0.3rem;
+  left: 1rem;
+  top: 11rem;
+  border-radius: 1rem;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+  background-color: #343444;
 }
 
 .social_sticky--total .social--total {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	gap: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .social_sticky--total .social--total i {
-	font-size: 0.8rem;
-	color: var(--light-color);
-	cursor: pointer;
-	transition: all 0.5s ease-in-out;
+  font-size: 0.8rem;
+  padding: 0.1rem 0;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .social_sticky--total .social--total i:hover {
-	color: rgba(255, 250, 250, 0.589);
-	transform: scale(1.1);
-	transform-origin: top;
+  color: rgba(255, 250, 250, 0.589);
+  transform: scale(1.1);
+  transform-origin: top;
 }
