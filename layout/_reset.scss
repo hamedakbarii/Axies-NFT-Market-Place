@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #14141f;
+  --light-color: #f8fafa;
+  --dark-color: black;
+  --secondary-color: gray;
+  --lightpurple-color: #4e3fee;
+  --green-color: green;
+  --red-color: red;
+  --likegray-color: #3e3636;
+}
+
+html {
+  font-size: 1.5rem;
+  font-family: "poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-color);
+  position: relative;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 2px solid var(--lightpurple-color);
+  font-family: inherit;
+  font-size: 0.5rem;
+  box-shadow: 0;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3 ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: var(--lightpurple-color);
+  background-color: var(--light-color);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+i {
+  color: var(--light-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+i:hover {
+  transform: scale(1.1);
+}
+
+/* -------------------dark /light mode--------------- */
+
+.light {
+  background-color: var(--light-color);
+
+  .navbar__title {
+    span {
+      color: var(--dark-color);
+    }
+  }
+
+  button:hover i {
+    color: var(--dark-color);
+  }
+
+  #header nav {
+    background-color: var(--light-color);
+
+    .header_ul .first_ul > li > a {
+      color: var(--primary-color);
+      padding: 0 0.5rem;
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+
+    i {
+      color: var(--primary-color);
+    }
+
+    .navbar__button {
+      i {
+        color: white;
+      }
+    }
+  }
+
+  .social_sticky--total {
+    background-color: var(--primary-color);
+  }
+
+  #hero {
+    .hero__left h2 {
+      color: var(--dark-color);
+    }
+  }
+
+  .Auction__box {
+    background-color: var(--light-color);
+    width: 100%;
+    height: 30rem;
+
+    .Auction__box--titles h2,
+    h3 {
+      color: var(--dark-color);
+    }
+  }
+
+  #picks {
+    .picks__title h2,
+    p {
+      color: var(--dark-color);
+      // padding: 1rem 1rem;
+    }
+
+    .picks__items--item p {
+      padding-top: 0.5rem;
+      color: var(--light-color);
+      font-size: 0.7rem;
+    }
+  }
+
+  #features {
+    .features__items--item {
+      h2 {
+        color: var(--dark-color);
+      }
+
+      p {
+        color: var(--dark-color);
+      }
+    }
+  }
+
+  #seller {
+    .seller__title {
+      h2 {
+        color: var(--dark-color);
+      }
+    }
+    .seller__all {
+      .seller__up {
+        .seller__up--items {
+          .seller__up--right {
+            h4 {
+              color: var(--dark-color);
+            }
+          }
+        }
+      }
+
+      .seller__down {
+        .seller__down--items {
+          .seller__down--right {
+            h4 {
+              color: var(--dark-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------ container media query --------------*/
+
+@media (max-width: 567px) {
+  .container {
+    width: 540px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    width: 960px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+
+//----------scroll bar ---------------
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--lightpurple-color);
+  border-radius: 0.5rem;
+}

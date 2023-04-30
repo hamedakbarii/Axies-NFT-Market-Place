@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./assets/header img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./layout/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+      integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Axies NFT Market Place</title>
+  </head>
+
+  <body class="dark">
+    <header id="header">
+      <nav class="navbar">
+        <div class="navbar__title">
+          <img src="./assets/header img/favicon.ico" alt="axies-logo" />
+          <span>Axies</span>
+        </div>
+
+        <button class="btn"><a href="./login.html">Login</a></button>
+
+        <div class="header_ul">
+          <ul class="first_ul">
+            <li>
+              <a>Home</a>
+            </li>
+
+            <li>
+              <a href="#">Explore</a>
+            </li>
+
+            <li>
+              <a href="">Activity <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="first-mega">
+                <li><a>test1</a></li>
+                <li><a>test2</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">Community </a>
+            </li>
+
+            <li>
+              <a href="">Pages <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="first-mega">
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./item-details.html">item-details</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="">Contact <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="first-mega">
+                <li><a>test1</a></li>
+                <li><a>test2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header_search_button">
+          <i class="fa-solid fa-magnifying-glass glass"></i>
+          <input type="text" class="search_input" placeholder="search..." />
+          <i class="fa-solid fa-circle-minus delete"></i>
+        </div>
+
+        <div class="navbar__button">
+          <button class="btn wall">
+            <i class="fa-solid fa-wallet wallett"></i>Wallet connect
+          </button>
+        </div>
+
+        <div class="navbar__double--icon">
+          <i class="fas fa-moon moonIcon"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="social_sticky--total">
+      <div class="social--total">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-discord"></i>
+      </div>
+    </div>
+
+    <main>
+      <section id="hero">
+        <div class="container">
+          <div class="hero__section">
+            <div class="hero__left">
+              <h2>
+                Discover, and collect<br />extraordinary<br />
+                <span>Monster</span> NFTs
+              </h2>
+              <p>
+                Marketplace for Moster Character Collectons Non Fungible Token
+                NFTs
+              </p>
+
+              <div class="hero__left--buttons">
+                <button class="btn">Explore</button>
+                <button class="btn">Create</button>
+              </div>
+            </div>
+
+            <div class="hero__right">
+              <img src="./assets/header img/Hero Image.png" alt="Hero-Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="container">
+          <div class="feautures__items">
+            <div class="features__items--item">
+              <i class="fa-solid fa-wallet wallet_purple"></i>
+              <h2>Set Up Your Wallet</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                posuere in vestibulum volutpat. Ut pharetra morbi sit.
+              </p>
+            </div>
+
+            <div class="features__items--item">
+              <i class="fa-solid fa-wallet wallet_green"></i>
+              <h2>Set Up Your Wallet</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                posuere in vestibulum volutpat. Ut pharetra morbi sit.
+              </p>
+            </div>
+
+            <div class="features__items--item">
+              <i class="fa-solid fa-image ppurple"></i>
+              <h2>Add Your NFTs</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                posuere in vestibulum volutpat. Ut pharetra morbi sit.
+              </p>
+            </div>
+
+            <div class="features__items--item">
+              <i class="fa-solid fa-bookmark red"></i>
+              <h2>List Them For Sale</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                posuere in vestibulum volutpat. Ut pharetra morbi sit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Auction">
+        <div class="Auction__box">
+          <div class="Auction__box--titles">
+            <h2>Live Auction</h2>
+            <h3>EXPLORE MORE</h3>
+          </div>
+
+          <div class="Auction__box--items">
+            <div class="Auction__box--items__item">
+              <img src="./assets/animate characters/Rectangle 6.png" alt="" />
+
+              <div class="item__timer">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                <p>5 : 23 : 22 : 08</p>
+              </div>
+
+              <div class="item__product">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>place Bid</p>
+              </div>
+
+              <h2>“Hamlet Contemplates Yorick’s...</h2>
+
+              <div class="item--bottom">
+                <div class="item--bottom__left">
+                  <div class="item--bottom__left--left">
+                    <img src="./assets/Rectangle 8.png" alt="" />
+                  </div>
+
+                  <div class="item--bottom__left--right">
+                    <p>creator</p>
+                    <h4>SalvadorDali</h4>
+                  </div>
+                </div>
+
+                <div class="item--bottom__right">
+                  <button class="btn">Bsc</button>
+                </div>
+              </div>
+
+              <div class="item__footer">
+                <div class="footer__left">
+                  <p>Current Blid</p>
+
+                  <div class="footer__left--text">
+                    <p class="footer__paragraph">4.89 ETH</p>
+                    <p>= $12.246</p>
+                  </div>
+                </div>
+
+                <div class="footer__right">
+                  <button class="btn">
+                    <i class="fa-solid fa-heart"></i>100
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="Auction__box--items__item">
+              <img
+                src="./assets/animate characters/Rectangle 6 (1).png"
+                alt=""
+              />
+
+              <div class="item__timer">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                <p>5 : 23 : 22 : 08</p>
+              </div>
+
+              <div class="item__product">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>place Bid</p>
+              </div>
+              <h2>“Hamlet Contemplates Yorick’s...</h2>
+
+              <div class="item--bottom">
+                <div class="item--bottom__left">
+                  <div class="item--bottom__left--left">
+                    <img src="./assets/Rectangle 8 (1).png" alt="" />
+                  </div>
+
+                  <div class="item--bottom__left--right">
+                    <p>creator</p>
+                    <h4>SalvadorDali</h4>
+                  </div>
+                </div>
+
+                <div class="item--bottom__right">
+                  <button class="btn">Bsc</button>
+                </div>
+              </div>
+
+              <div class="item__footer">
+                <div class="footer__left">
+                  <p>Current Blid</p>
+
+                  <div class="footer__left--text">
+                    <p class="footer__paragraph">4.89 ETH</p>
+                    <p>= $12.246</p>
+                  </div>
+                </div>
+
+                <div class="footer__right">
+                  <button class="btn">
+                    <i class="fa-solid fa-heart"></i>100
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="Auction__box--items__item">
+              <img
+                src="./assets/animate characters/Rectangle 6 (3).png"
+                alt=""
+              />
+
+              <div class="item__timer">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                <p>5 : 23 : 22 : 08</p>
+              </div>
+
+              <div class="item__product">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>place Bid</p>
+              </div>
+
+              <h2>“Hamlet Contemplates Yorick’s...</h2>
+
+              <div class="item--bottom">
+                <div class="item--bottom__left">
+                  <div class="item--bottom__left--left">
+                    <img src="./assets/Rectangle 8 (2).png" alt="" />
+                  </div>
+
+                  <div class="item--bottom__left--right">
+                    <p>creator</p>
+                    <h4>SalvadorDali</h4>
+                  </div>
+                </div>
+
+                <div class="item--bottom__right">
+                  <button class="btn">Bsc</button>
+                </div>
+              </div>
+
+              <div class="item__footer">
+                <div class="footer__left">
+                  <p>Current Blid</p>
+
+                  <div class="footer__left--text">
+                    <p class="footer__paragraph">4.89 ETH</p>
+                    <p>= $12.246</p>
+                  </div>
+                </div>
+
+                <div class="footer__right">
+                  <button class="btn">
+                    <i class="fa-solid fa-heart"></i>100
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="Auction__box--items__item">
+              <img
+                src="./assets/animate characters/Rectangle 6 (2).png"
+                alt=""
+              />
+
+              <div class="item__timer">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                <p>5 : 23 : 22 : 08</p>
+              </div>
+
+              <div class="item__product">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>place Bid</p>
+              </div>
+
+              <h2>“Hamlet Contemplates Yorick’s...</h2>
+
+              <div class="item--bottom">
+                <div class="item--bottom__left">
+                  <div class="item--bottom__left--left">
+                    <img src="./assets/Rectangle 8.png" alt="" />
+                  </div>
+
+                  <div class="item--bottom__left--right">
+                    <p>creator</p>
+                    <h4>SalvadorDali</h4>
+                  </div>
+                </div>
+
+                <div class="item--bottom__right">
+                  <button class="btn">Bsc</button>
+                </div>
+              </div>
+
+              <div class="item__footer">
+                <div class="footer__left">
+                  <p>Current Blid</p>
+
+                  <div class="footer__left--text">
+                    <p class="footer__paragraph">4.89 ETH</p>
+                    <p>= $12.246</p>
+                  </div>
+                </div>
+
+                <div class="footer__right">
+                  <button class="btn">
+                    <i class="fa-solid fa-heart"></i>100
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="seller">
+        <div class="container">
+          <div class="seller__title">
+            <h2>Top Seller</h2>
+          </div>
+
+          <div class="seller__items">
+            <div class="seller__items--item">
+              <div class="items__item--left">
+                <img src="./assets/characters/14/Rectangle 14.png" alt="" />
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <div class="items__item--right">
+                <h4>Crispin Berry</h4>
+                <p>214.2 ETH</p>
+              </div>
+            </div>
+
+            <div class="seller__items--item">
+              <div class="items__item--left">
+                <img src="./assets/characters/14/14 (4).png" alt="" />
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <div class="items__item--right">
+                <h4>Crispin Berry</h4>
+                <p>214.2 ETH</p>
+              </div>
+            </div>
+
+            <div class="seller__items--item">
+              <div class="items__item--left">
+                <img src="./assets/characters/14/14 (3).png " alt="" />
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <div class="items__item--right">
+                <h4>Crispin Berry</h4>
+                <p>214.2 ETH</p>
+              </div>
+            </div>
+
+            <div class="seller__items--item">
+              <div class="items__item--left">
+                <img src="./assets/characters/14/Rectangle 14 (3).png"">
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <div class="items__item--right">
+                <h4>Crispin Berry</h4>
+                <p>214.2 ETH</p>
+              </div>
+            </div>
+
+            <div class="seller__items--item">
+              <div class="items__item--left">
+                <img src="./assets/characters/14/Rectangle 14.png" alt="" />
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <div class="items__item--right">
+                <h4>Crispin Berry</h4>
+                <p>214.2 ETH</p>
+              </div>
+            </div>
+
+            <div class="seller__items--item">
+              <div class="items__item--left">
+                <img src="./assets/characters/14/Rectangle 14 (4).png" alt="" />
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <div class="items__item--right">
+                <h4>Crispin Berry</h4>
+                <p>214.2 ETH</p>
+              </div>
+            </div>
+
+            <div class="seller__items--item">
+              <div class="items__item--left">
+                <img src="./assets/characters/14/Rectangle 14 (3).png" alt="" />
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <div class="items__item--right">
+                <h4>Crispin Berry</h4>
+                <p>214.2 ETH</p>
+              </div>
+            </div>
+
+            <div class="seller__items--item">
+              <div class="items__item--left">
+                <img src="./assets/characters/14/Rectangle 14 (1).png" alt="" />
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <div class="items__item--right">
+                <h4>Crispin Berry</h4>
+                <p>214.2 ETH</p>
+              </div>
+            </div>
+
+            <div class="seller__items--item">
+              <div class="items__item--left">
+                <img src="./assets/characters/14/Rectangle 14.png" alt="" />
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <div class="items__item--right">
+                <h4>Crispin Berry</h4>
+                <p>214.2 ETH</p>
+              </div>
+            </div>
+
+            <div class="seller__items--item">
+              <div class="items__item--left">
+                <img src="./assets/characters/14/14 (4).png" alt="" />
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <div class="items__item--right">
+                <h4>Crispin Berry</h4>
+                <p>214.2 ETH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="picks">
+        <div class="container">
+          <div class="picks__all">
+            <div class="picks__title">
+              <div class="picks__title--left">
+                <h2>Today's picks</h2>
+              </div>
+
+              <div class="picks__title--right">
+                <p>EXLPORE MORE</p>
+              </div>
+            </div>
+
+            <div class="picks__buttons">
+              <div class="picks__buttons--left">
+                <button class="btn">
+                  <i class="fa-solid fa-file"></i>Category
+                </button>
+                <button class="btn">
+                  <i class="fa-solid fa-dollar-sign"></i>Price range
+                </button>
+                <button class="btn">
+                  <i class="fa-solid fa-bolt"></i>Sale type
+                </button>
+                <button class="btn">
+                  <i class="fa-solid fa-flask"></i>Blockchain
+                </button>
+              </div>
+
+              <div class="picks__buttons--right">
+                <button class="btn soft">
+                  <i class="fa-brands fa-microsoft"></i>Sort By : Recently Added
+                </button>
+              </div>
+            </div>
+
+            <div class="picks__items">
+              <div class="picks__items--item">
+                <img
+                  src="./assets/animate characters/Rectangle 6 (2).png   "
+                  alt=""
+                />
+
+                <h2>“Hamlet Contemplates Yorick’s...</h2>
+
+                <div class="item--bottom">
+                  <div class="item--bottom__left">
+                    <div class="item--bottom__left--left">
+                      <img
+                        src="./assets/characters/Rectangle 8 (1).png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="item--bottom__left--right">
+                      <p>creator</p>
+                      <h4>SalvadorDali</h4>
+                    </div>
+                  </div>
+
+                  <div class="item--bottom__right">
+                    <button class="btn">Bsc</button>
+                  </div>
+                </div>
+
+                <div class="item__footer">
+                  <div class="footer__left">
+                    <h6>Current Blid</h6>
+                    <div class="footer__left--text">
+                      <p class="footer__paragraph">4.89 ETH = $12.246</p>
+                    </div>
+                  </div>
+
+                  <div class="footer__right">
+                    <p><i class="fa-solid fa-arrows-rotate"></i>view history</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="picks__items--item">
+                <img
+                  src="./assets/animate characters/Rectangle 6 (3).png"
+                  alt=""
+                />
+                <h2>“Hamlet Contemplates Yorick’s...</h2>
+
+                <div class="item--bottom">
+                  <div class="item--bottom__left">
+                    <div class="item--bottom__left--left">
+                      <img
+                        src="./assets/characters/Rectangle 8 (2).png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="item--bottom__left--right">
+                      <p>creator</p>
+                      <h4>SalvadorDali</h4>
+                    </div>
+                  </div>
+
+                  <div class="item--bottom__right">
+                    <button class="btn">Bsc</button>
+                  </div>
+                </div>
+
+                <div class="item__footer">
+                  <div class="footer__left">
+                    <h6>Current Blid</h6>
+                    <div class="footer__left--text">
+                      <p class="footer__paragraph">4.89 ETH = $12.246</p>
+                    </div>
+                  </div>
+
+                  <div class="footer__right">
+                    <p><i class="fa-solid fa-arrows-rotate"></i>view history</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="picks__items--item">
+                <img
+                  src="./assets/animate characters/Rectangle 6 (2).png"
+                  alt=""
+                />
+                <h2>“Hamlet Contemplates Yorick’s...</h2>
+
+                <div class="item--bottom">
+                  <div class="item--bottom__left">
+                    <div class="item--bottom__left--left">
+                      <img src="./assets/characters/Rectangle 8.png" alt="" />
+                    </div>
+
+                    <div class="item--bottom__left--right">
+                      <p>creator</p>
+                      <h4>SalvadorDali</h4>
+                    </div>
+                  </div>
+
+                  <div class="item--bottom__right">
+                    <button class="btn">Bsc</button>
+                  </div>
+                </div>
+
+                <div class="item__footer">
+                  <div class="footer__left">
+                    <h6>Current Blid</h6>
+                    <div class="footer__left--text">
+                      <p class="footer__paragraph">4.89 ETH = $12.246</p>
+                    </div>
+                  </div>
+
+                  <div class="footer__right">
+                    <p><i class="fa-solid fa-arrows-rotate"></i>view history</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="picks__items--item">
+                <img
+                  src="./assets/animate characters/Rectangle 6 (1).png"
+                  alt=""
+                />
+                <h2>“Hamlet Contemplates Yorick’s...</h2>
+
+                <div class="item--bottom">
+                  <div class="item--bottom__left">
+                    <div class="item--bottom__left--left">
+                      <img
+                        src="./assets/characters/Rectangle 13 (1).png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="item--bottom__left--right">
+                      <p>creator</p>
+                      <h4>SalvadorDali</h4>
+                    </div>
+                  </div>
+
+                  <div class="item--bottom__right">
+                    <button class="btn">Bsc</button>
+                  </div>
+                </div>
+
+                <div class="item__footer">
+                  <div class="footer__left">
+                    <h6>Current Blid</h6>
+                    <div class="footer__left--text">
+                      <p class="footer__paragraph">4.89 ETH = $12.246</p>
+                    </div>
+                  </div>
+
+                  <div class="footer__right">
+                    <p><i class="fa-solid fa-arrows-rotate"></i>view history</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="picks__items--item">
+                <img src="./assets/animate characters/Rectangle 6.png" alt="" />
+                <h2>“Hamlet Contemplates Yorick’s...</h2>
+
+                <div class="item--bottom">
+                  <div class="item--bottom__left">
+                    <div class="item--bottom__left--left">
+                      <img src="./assets/characters/Rectangle 13.png" alt="" />
+                    </div>
+
+                    <div class="item--bottom__left--right">
+                      <p>creator</p>
+                      <h4>SalvadorDali</h4>
+                    </div>
+                  </div>
+
+                  <div class="item--bottom__right">
+                    <button class="btn">Bsc</button>
+                  </div>
+                </div>
+
+                <div class="item__footer">
+                  <div class="footer__left">
+                    <h6>Current Blid</h6>
+                    <div class="footer__left--text">
+                      <p class="footer__paragraph">4.89 ETH = $12.246</p>
+                    </div>
+                  </div>
+
+                  <div class="footer__right">
+                    <p><i class="fa-solid fa-arrows-rotate"></i>view history</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="picks__items--item">
+                <img
+                  src="./assets/animate characters/Rectangle 6 (1).png"
+                  alt=""
+                />
+                <h2>“Hamlet Contemplates Yorick’s...</h2>
+
+                <div class="item--bottom">
+                  <div class="item--bottom__left">
+                    <div class="item--bottom__left--left">
+                      <img src="./assets/characters/14/14 (2).png" alt="" />
+                    </div>
+
+                    <div class="item--bottom__left--right">
+                      <p>creator</p>
+                      <h4>SalvadorDali</h4>
+                    </div>
+                  </div>
+
+                  <div class="item--bottom__right">
+                    <button class="btn">Bsc</button>
+                  </div>
+                </div>
+
+                <div class="item__footer">
+                  <div class="footer__left">
+                    <h6>Current Blid</h6>
+                    <div class="footer__left--text">
+                      <p class="footer__paragraph">4.89 ETH = $12.246</p>
+                    </div>
+                  </div>
+
+                  <div class="footer__right">
+                    <p><i class="fa-solid fa-arrows-rotate"></i>view history</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="picks__items--item">
+                <img
+                  src="./assets/animate characters/Rectangle 6 (3).png"
+                  alt=""
+                />
+                <h2>“Hamlet Contemplates Yorick’s...</h2>
+
+                <div class="item--bottom">
+                  <div class="item--bottom__left">
+                    <div class="item--bottom__left--left">
+                      <img src="./assets/characters/14/14 (4).png" alt="" />
+                    </div>
+
+                    <div class="item--bottom__left--right">
+                      <p>creator</p>
+                      <h4>SalvadorDali</h4>
+                    </div>
+                  </div>
+
+                  <div class="item--bottom__right">
+                    <button class="btn">Bsc</button>
+                  </div>
+                </div>
+
+                <div class="item__footer">
+                  <div class="footer__left">
+                    <h6>Current Blid</h6>
+                    <div class="footer__left--text">
+                      <p class="footer__paragraph">4.89 ETH = $12.246</p>
+                    </div>
+                  </div>
+
+                  <div class="footer__right">
+                    <p><i class="fa-solid fa-arrows-rotate"></i>view history</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="picks__items--item">
+                <img src="./assets/animate characters/Rectangle 6.png" alt="" />
+                <h2>“Hamlet Contemplates Yorick’s...</h2>
+
+                <div class="item--bottom">
+                  <div class="item--bottom__left">
+                    <div class="item--bottom__left--left">
+                      <img src="./assets/characters/14/14 (5).png" alt="" />
+                    </div>
+
+                    <div class="item--bottom__left--right">
+                      <p>creator</p>
+                      <h4>SalvadorDali</h4>
+                    </div>
+                  </div>
+
+                  <div class="item--bottom__right">
+                    <button class="btn">Bsc</button>
+                  </div>
+                </div>
+
+                <div class="item__footer">
+                  <div class="footer__left">
+                    <h6>Current Blid</h6>
+                    <div class="footer__left--text">
+                      <p class="footer__paragraph">4.89 ETH = $12.246</p>
+                    </div>
+                  </div>
+
+                  <div class="footer__right">
+                    <p><i class="fa-solid fa-arrows-rotate"></i>view history</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="picks__footer--button">
+              <button class="btn">Load More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer__items">
+        <div class="footer__items--item first">
+          <div class="first__up">
+            <img src="./assets/axies logo/Logo.png" alt="" />
+          </div>
+
+          <div class="first__down">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />
+              adipiscing consectetur phasellusnuncnunc vel.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__items--item">
+          <div class="item__title">
+            <h2>My Account</h2>
+          </div>
+
+          <div class="item__paragraphs">
+            <p><a href="#">Authors</a></p>
+            <p><a href="#">Collection</a></p>
+            <p><a href="#">Author Profile</a></p>
+            <p><a href="#">Create Item</a></p>
+          </div>
+        </div>
+
+        <div class="footer__items--item">
+          <div class="item__title">
+            <h2>Resources</h2>
+          </div>
+
+          <div class="item__paragraphs">
+            <p><a href="#">Help & Support</a></p>
+            <p><a href="#">Live Auctions</a></p>
+            <p><a href="#">Item Details</a></p>
+            <p><a href="#">Activity</a></p>
+          </div>
+        </div>
+
+        <div class="footer__items--item">
+          <div class="item__title">
+            <h2>Company</h2>
+          </div>
+
+          <div class="item__paragraphs">
+            <p><a href="#">Explore</a></p>
+            <p><a href="#">Contact Us</a></p>
+            <p><a href="#">Our Blog</a></p>
+            <p><a href="#">FAQ</a></p>
+          </div>
+        </div>
+
+        <div class="footer__items--item last">
+          <div class="item__title">
+            <h2>subscribe us</h2>
+          </div>
+
+          <div class="item__input">
+            <input type="text" placeholder="info@yourgmail.com" />
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+
+          <div class="item__social">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-solid fa-paper-plane"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="scroll-up-btn" class="scroll__btn">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>

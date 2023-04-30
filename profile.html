@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/header img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+        integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+
+
+    <title>Axies / Profile</title>
+
+</head>
+
+<body>
+
+    <header id="header">
+
+        <nav class="navbar" id="profile__navication">
+
+            <div class="navbar__title">
+                <img src="./assets/axies logo/Logo.png" alt="">
+            </div>
+
+            <button class="btn"><a href="./login.html">Login</a></button>
+
+
+            <div class="header_ul">
+                <ul class="first_ul">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="">Explore</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="first-mega">
+                            <li><a href="#">test 1</a></li>
+                            <li><a href="#">test 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="">Activity</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="first-mega">
+                            <li><a>test1</a></li>
+                            <li><a>test2</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="">Community</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="first-mega">
+                            <li><a>test1</a></li>
+                            <li><a>test2</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="">Pages</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="first-mega">
+                            <li><a href="./profile.html">Profile</a></li>
+                            <li><a href="./item-details.html">Item-Details</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="">Contact</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="first-mega">
+                            <li><a>test1</a></li>
+                            <li><a>test2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="header_search_button">
+                <i class="fa-solid fa-magnifying-glass glass"></i>
+                <input type="text" class="search_input" placeholder="search...">
+                <i class="fa-solid fa-circle-minus delete"></i>
+            </div>
+
+            <div class="navbar__profile">
+                <img src="./assets/characters/Rectangle 8.png" alt="">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+
+            <div class="navbar__double--icon">
+                <i class="fa fa-sun sunn"></i>
+                <i class="fa fa-moon moonn"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div class="social_sticky--total">
+        <div class="social--total">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-discord"></i>
+        </div>
+    </div>
+
+    <section id="profile">
+
+        <div class="editProfile">
+            <h1>Edit Profile</h1>
+            <div class="editProfile__tabs">
+                <a href="#">Home / </a>
+                <a href="#">Pages / </a>
+                <a href="#">Author / </a>
+                <a href="#" class="edit">Edit Profile</a>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="main__profile">
+
+                <div class="left__profile">
+
+                    <div class="main__profile--left">
+
+                        <div class="main__profile--photo">
+                            <img src="./assets/profile/fajfgfugfa.png" alt="">
+                            <button class="btn">Upload New Photo</button>
+                            <button class="btn">Delete</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="right__profile">
+
+                    <div class="main__profile--header">
+
+                        <div class="profile__header--upload">
+
+                            <form action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
+
+                        </div>
+
+                        <img src="./assets/profile/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="cover">
+                        <img src="./assets/profile/pawel-czerwinski-aMPfitH2tT0-unsplash.jpg" alt="cover">
+
+                    </div>
+
+                    <div class="main__profile--forms">
+                        <div class="main__profile--centerform">
+                            <form action="" class="centerForm">
+
+                                <h2>Account info</h2>
+
+                                <label for="name">Display Name</label>
+                                <input type="text" placeholder="Hamed Akbari" id="name">
+
+                                <label for="URL">Custom URL</label>
+                                <input type="url" placeholder="ex.com" id="URL">
+
+                                <label for="Email">Email</label>
+                                <input type="email" placeholder="hamedkarate0@gmail.com" id="Email">
+
+                                <label for="bio">Bio</label>
+                                <input type="text" id="bio" class="bioInp">
+
+                                <button class="btn">Update Profile</button>
+
+                            </form>
+                        </div>
+                        <div class="main__profile--rightform">
+                            <form action="" class="centerForm">
+
+                                <h2>Your social media</h2>
+
+                                <label for="Facebook">Facebook</label>
+                                <input type="text" placeholder="Facebook username" id="Facebook">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i>connect to Facebook</a>
+
+
+
+                                <label for="Twitter">Twitter</label>
+                                <input type="text" placeholder="Twitter username" id="Twitter">
+                                <a href="#"><i class="fa-brands fa-twitter"></i>connect to Twitter</a>
+
+
+
+                                <label for="Discord">Discord</label>
+                                <input type="text" placeholder="Connect To Discord" id="Discord">
+                                <a href="#"><i class="fa-brands fa-discord"></i>connect to Discord</a>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer id="footer">
+
+        <div class="footer__items">
+
+            <div class="footer__first">
+
+                <div class="first__up">
+                    <img src="./assets/axies logo/Logo.png" alt="">
+                </div>
+
+                <div class="first__down">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Nunc non adipiscing consectetur
+                        phasellus
+                        nunc
+                        nunc vel.</p>
+                </div>
+
+            </div>
+
+            <div class="footer__second">
+
+                <div class="second__title">
+                    <h2>My Account</h2>
+                </div>
+
+                <div class="second__items">
+                    <p><a href="#">Authors</a></p>
+                    <p><a href="#">Collection</a></p>
+                    <p><a href="#">Author Profile</a></p>
+                    <p><a href="#">Create Item</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer__third">
+                <div class="third__title">
+                    <h2>Resources</h2>
+                </div>
+
+                <div class="third__items">
+                    <p><a href="#">Help & Support</a></p>
+                    <p><a href="#">Live Auctions</a></p>
+                    <p><a href="#">Item Details</a></p>
+                    <p><a href="#">Activity</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer__fourth">
+                <div class="fourth__title">
+                    <h2>Company</h2>
+                </div>
+
+                <div class="fourth__items">
+                    <p><a href="#">Explore</a></p>
+                    <p><a href="#">Contact Us</a></p>
+                    <p><a href="#">Our Blog</a></p>
+                    <p><a href="#">FAQ</a></p>
+                </div>
+            </div>
+
+            <div class="footer__last">
+
+                <div class="last__title">
+                    <h2>subscribe us</h2>
+                </div>
+
+                <div class="last__items">
+                    <input type="text" placeholder="info@yourgmail.com">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+
+                <div class="last__item--socialmedia">
+
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <div id="scroll-up-btn" class="scroll__btn">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+
+
+
+    <script>Dropzone.discover();</script>
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
