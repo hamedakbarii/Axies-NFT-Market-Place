@@ -19,14 +19,9 @@
 }
 
 .social_sticky--total .social--total i {
+  color: whitesmoke;
   font-size: 0.8rem;
   padding: 0.1rem 0;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-}
-
-.social_sticky--total .social--total i:hover {
-  color: rgba(255, 250, 250, 0.589);
-  transform: scale(1.1);
-  transform-origin: top;
 }

@@ -56,8 +56,7 @@ a {
 
 .btn:hover {
   cursor: pointer;
-  color: var(--lightpurple-color);
-  background-color: var(--light-color);
+  background-color: var(--lightpurple-color);
 }
 
 .container {
@@ -69,16 +68,6 @@ a {
 button {
   cursor: pointer;
   font-family: inherit;
-}
-
-i {
-  color: var(--light-color);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-i:hover {
-  transform: scale(1.1);
 }
 
 /* -------------------dark /light mode--------------- */

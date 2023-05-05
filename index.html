@@ -13,16 +13,8 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
-      integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -30,72 +22,105 @@
     <title>Axies NFT Market Place</title>
   </head>
 
-  <body class="dark">
+  <body>
     <header id="header">
       <nav class="navbar">
-        <div class="navbar__title">
-          <img src="./assets/header img/favicon.ico" alt="axies-logo" />
-          <span>Axies</span>
+        <div class="navLeft">
+          <div class="navbar__title">
+            <img src="./assets/header img/favicon.ico" alt="axies-logo" />
+            <span>Axies</span>
+          </div>
+
+          <div class="navbarMenu">
+            <ul class="navbarMenuUl">
+              <li class="Home"><a>Home</a></li>
+              <li>
+                <a>Explore <i class="fas fa-chevron-down"></i></a>
+                <ul class="navbarMegaMenu">
+                  <li>Auctions</li>
+                  <li>Collections</li>
+                  <li>Today's Picks</li>
+                  <li>Sellers</li>
+                </ul>
+              </li>
+              <li>
+                <a>Activity <i class="fas fa-chevron-down"></i></a>
+                <ul class="navbarMegaMenu">
+                  <li>Streams</li>
+                  <li>Events</li>
+                </ul>
+              </li>
+              <li>
+                <a>Community <i class="fas fa-chevron-down"></i></a>
+                <ul class="navbarMegaMenu">
+                  <li>Forum</li>
+                  <li>Social Medias</li>
+                </ul>
+              </li>
+              <li>
+                <a>Pages <i class="fas fa-chevron-down"></i></a>
+                <ul class="navbarMegaMenu">
+                  <li><a href="./item-details.html">Item</a></li>
+                  <li><a href="./profile.html">Profile</a></li>
+                  <li><a href="./login.html">Login</a></li>
+                </ul>
+              </li>
+              <li class="contact">
+                <a>Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="header_ul">
-          <ul class="first_ul">
-            <li>
-              <a>Home</a>
-            </li>
+        <div class="navRight">
+          <div class="search">
+            <img
+              src="./assets/header img/icons8-search.svg"
+              alt="searchIcon"
+              class="searchIcon"
+            />
+          </div>
 
-            <li>
-              <a>Explore</a>
-            </li>
+          <div class="navbar__button">
+            <button class="btn">
+              <i class="fa-solid fa-wallet"></i>
+              Wallet connect
+            </button>
+          </div>
 
-            <li>
-              <a>Activity <i class="fa-solid fa-angle-down"></i></a>
-              <ul class="first-mega">
-                <li><a>test1</a></li>
-                <li><a>test2</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <a>Community </a>
-            </li>
-
-            <li>
-              <a>Pages <i class="fa-solid fa-angle-down"></i></a>
-              <ul class="first-mega">
-                <li><a href="./profile.html">Profile</a></li>
-                <li><a href="./item-details.html">item-details</a></li>
-                <li><a href="./login.html">Login</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <a>Contact <i class="fa-solid fa-angle-down"></i></a>
-              <ul class="first-mega">
-                <li><a>test1</a></li>
-                <li><a>test2</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <div class="header_search_button">
-          <i class="fa-solid fa-magnifying-glass glass"></i>
-          <input type="text" class="search_input" placeholder="search..." />
-          <i class="fa-solid fa-circle-minus delete"></i>
-        </div>
-
-        <div class="navbar__button">
-          <button class="btn wall">
-            <i class="fa-solid fa-wallet wallett"></i>Wallet connect
-          </button>
-        </div>
-
-        <div class="navbar__double--icon">
-          <i class="fas fa-moon moonIcon"></i>
+          <div class="themeButtons">
+            <i class="fas fa-sun sun"></i>
+            <img src="./assets/header img/moon-2.png" alt="moon" class="moon" />
+          </div>
         </div>
       </nav>
     </header>
+
+    <div class="serachModal">
+      <div class="serachModalTop">
+        <img
+          src="./assets/header img/icons8-search.svg"
+          alt="searchIcon"
+          class="searchIcon"
+        />
+        <input
+          type="text"
+          placeholder="Search For NFTs, sellers or collections"
+        />
+      </div>
+      <div class="serachModalBottom">
+        <div class="serachModalBottomLeft">
+          <span class="controlBtn">⌘</span>
+          <span>+</span>
+          <span class="bBtn">B</span>
+          <p>to open search</p>
+        </div>
+        <div class="serachModalBottomRight">
+          <span class="escBtn">ESC</span>
+          <p>to close</p>
+        </div>
+      </div>
+    </div>
 
     <div class="social_sticky--total">
       <div class="social--total">
@@ -129,7 +154,12 @@
             </div>
 
             <div class="hero__right">
-              <img src="./assets/header img/Hero Image.png" alt="Hero-Image" />
+              <img src="./assets/Hero/hero-img.svg" alt="heroRightBackground" />
+              <img
+                src="./assets/Hero/imgslider2.png"
+                alt="heroRightCharacter"
+                class="heroCharacterImg"
+              />
             </div>
           </div>
         </div>

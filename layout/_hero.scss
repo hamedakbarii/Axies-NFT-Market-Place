@@ -5,14 +5,17 @@
 
 .hero__section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 3rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 
   .hero__left {
     h2 {
-      color: var(--light-color);
+      color: white;
       letter-spacing: 0.05rem;
-      line-height: 2rem;
+      line-height: 2.5rem;
       font-size: 2rem;
 
       span {
@@ -29,6 +32,19 @@
     }
     button {
       margin-top: 1rem;
+    }
+  }
+  .hero__right {
+    position: relative;
+    img {
+      width: 22rem;
+    }
+    .heroCharacterImg {
+      position: absolute;
+      top: 0;
+      left: 4rem;
+      width: 14rem;
+      animation: heroCharacterImg infinite;
     }
   }
 }
@@ -75,5 +91,10 @@
 
   .hero__left {
     margin-right: 10rem;
+  }
+}
+
+@keyframes heroCharacterImg {
+  0% {
   }
 }

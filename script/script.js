@@ -1,23 +1,4 @@
-// Search icon navbar
-const search_btn = document.querySelector(".glass");
-let input = document.querySelector(".search_input");
-let deleteBtn = document.querySelector(".delete");
-
-search_btn.addEventListener("click", function () {
-  input.classList.toggle("search_input--show");
-  deleteBtn.style.display = "block";
-  if (!input.classList.contains("search_input--show")) {
-    deleteBtn.style.display = "none";
-  }
-});
-
-deleteBtn.addEventListener("click", function () {
-  input.classList.remove("search_input--show");
-  deleteBtn.style.display = "none";
-});
-
-// **************************************************************
-// scroll up button
+// ---------------- Scroll To Top Button -------------------
 const mybutton = document.querySelector(".scroll__btn");
 
 window.onscroll = function () {
@@ -39,46 +20,28 @@ function topFunction() {
 
 mybutton.addEventListener("click", topFunction);
 
-// **************************************************************
+// ------xxx---------- Scroll To Top Button -------xxx------------
 
-// //--------------------------------Dropzone
-// const myDropzone = document.querySelector('.dz-success-mark')
+// ----------------- Dark and Light Theme ----------------------
 
-//  myDropzone.on("complete", function(file) {
-//     myDropzone.removeFile(file);
-//  });
+const moon = document.querySelector(".moon");
+const sun = document.querySelector(".sun");
 
-//  dark and light button
-
-let switchElement = document.querySelector(".moonIcon");
-
-switchElement.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-  switchElement.className = "fas fa-sun";
-
-  if (document.body.className.includes("light")) {
-    localStorage.setItem("theme", "light");
-  } else {
-    localStorage.setItem("theme", "dark");
-  }
+moon.addEventListener("click", () => {
+  document.body.classList.add("dark");
+});
+sun.addEventListener("click", () => {
+  document.body.classList.add("light");
 });
 
-window.onload = function () {
-  let localStorageTheme = localStorage.getItem("theme");
+// ------xxx----------- Dark and Light Theme ----------xxx------------
 
-  if (localStorageTheme === "dark") {
-    document.body.classList.add("dark");
-  } else {
-  }
-};
+// --------------- Search Button ----------------------- //
 
-// --------------------- responsive menu icon --------------------------
-
-const burger = document.querySelector(".moreicon");
-const nav = document.querySelector(".first_ul");
-const mainN = document.querySelector(".navbar");
-
-burger.addEventListener("click", () => {
-  nav.classList.toggle("hamed");
-  mainN.classList.toggle("aref");
+const searchIcon = document.querySelector(".searchIcon");
+const serachModal = document.querySelector(".serachModal");
+searchIcon.addEventListener("click", () => {
+  serachModal.style.display = "flex";
 });
+
+// ------xxx--------- Search Button --------------xxx--------- //
