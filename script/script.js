@@ -40,8 +40,28 @@ sun.addEventListener("click", () => {
 
 const searchIcon = document.querySelector(".searchIcon");
 const serachModal = document.querySelector(".serachModal");
-searchIcon.addEventListener("click", () => {
-  serachModal.style.display = "flex";
+const blurBg = document.querySelector(".blur-bg");
+
+function closeSearch() {
+  serachModal.style.display = "none";
+  serachModal.style.backdropFilter = "blur(0)";
+  blurBg.style.display = "none";
+}
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    closeSearch();
+  } else if (e.ctrlKey && (e.key === "b" || e.key === "B")) {
+    openSearch();
+  }
 });
+
+function openSearch() {
+  serachModal.style.display = "flex";
+  serachModal.style.backdropFilter = "blur(20px)";
+  blurBg.style.display = "block";
+}
+
+searchIcon.addEventListener("click", openSearch);
+blurBg.addEventListener("click", closeSearch);
 
 // ------xxx--------- Search Button --------------xxx--------- //

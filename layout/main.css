@@ -434,6 +434,8 @@ header nav .navRight .themeButtons i {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 .serachModal .serachModalTop {
   width: 100%;
@@ -500,6 +502,15 @@ header nav .navRight .themeButtons i {
 .serachModal .serachModalBottom .serachModalBottomRight p {
   font-size: 0.6rem;
   color: #a29c9b;
+}
+
+.blur-bg {
+  position: fixed;
+  inset: 0;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  z-index: 99;
+  display: none;
 }
 
 #hero {
