@@ -260,3 +260,15 @@ header {
   z-index: 99;
   display: none;
 }
+
+// ------------- Responsive -------------------- //
+
+@media only screen and (max-width: 1000px) {
+  .navbarMenu {
+    display: none !important;
+  }
+  .search,
+  .navbar__button {
+    display: none !important;
+  }
+}
