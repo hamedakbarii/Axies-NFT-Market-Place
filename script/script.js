@@ -65,3 +65,11 @@ searchIcon.addEventListener("click", openSearch);
 blurBg.addEventListener("click", closeSearch);
 
 // ------xxx--------- Search Button --------------xxx--------- //
+
+// --------------- Hamburger Menu ------------------------------ //
+const hamburger = document.querySelector(".hamburgerMenu");
+
+hamburger.addEventListener("click", () => {
+  console.log("working");
+});
+// ----xxx-------- Hamburger Menu --------------xxx---------------- //

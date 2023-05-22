@@ -513,13 +513,35 @@ header nav .navRight .themeButtons i {
   display: none;
 }
 
+.hamburgerMenu {
+  display: flex;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: #343444;
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1250px) {
+  .navbar__button {
+    display: none !important;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .navbarMenu {
     display: none !important;
   }
-  .search,
-  .navbar__button {
+  .search {
     display: none !important;
+  }
+  .hamburgerMenu {
+    display: flex;
   }
 }
 #hero {
@@ -1193,7 +1215,6 @@ html {
 body {
   background-color: var(--primary-color);
   position: relative;
-  overflow-x: hidden;
 }
 
 ul {
