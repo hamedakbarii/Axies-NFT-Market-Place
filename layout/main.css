@@ -521,11 +521,55 @@ header nav .navRight .themeButtons i {
   align-items: center;
   gap: 0.2rem;
   background-color: #343444;
-  padding: 0.4rem;
+  padding: 0.1rem;
   font-size: 0.7rem;
   color: white;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+.navbarMenuR {
+  display: none;
+  position: absolute;
+  top: 2.7rem;
+  left: 0;
+  background-color: var(--primary-color);
+  width: 40rem;
+}
+.navbarMenuR .navbarMenuUlR {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 1rem;
+  transition: all ease 0.3s;
+}
+.navbarMenuR .navbarMenuUlR li {
+  transition: all ease 0.3s;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+}
+.navbarMenuR .navbarMenuUlR li:hover {
+  cursor: pointer;
+  background-color: #343444;
+}
+.navbarMenuR .navbarMenuUlR li:hover .navbarMegaMenuR {
+  display: block;
+}
+.navbarMenuR .navbarMenuUlR .navbarMegaMenuR {
+  display: none;
+  color: white;
+  padding: 0.5rem;
+}
+.navbarMenuR .navbarMenuUlR i {
+  font-size: 0.3rem;
+}
+
+.activeMenu {
+  display: flex;
 }
 
 @media only screen and (max-width: 1250px) {

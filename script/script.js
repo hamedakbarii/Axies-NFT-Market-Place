@@ -68,8 +68,11 @@ blurBg.addEventListener("click", closeSearch);
 
 // --------------- Hamburger Menu ------------------------------ //
 const hamburger = document.querySelector(".hamburgerMenu");
+const navbarMenu = document.querySelector(".navbarMenuR");
 
 hamburger.addEventListener("click", () => {
   console.log("working");
+  navbarMenu.classList.toggle("activeMenu");
 });
+
 // ----xxx-------- Hamburger Menu --------------xxx---------------- //
