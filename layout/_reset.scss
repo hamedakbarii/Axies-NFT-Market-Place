@@ -105,6 +105,27 @@ button {
         }
       }
 
+      .navbarMenuR {
+        background-color: whitesmoke;
+
+        .navbarMenuUlR {
+          li {
+            a {
+              color: #414144;
+            }
+            &:hover {
+              background-color: #a2a2a8;
+            }
+
+            .navbarMegaMenuR {
+              li {
+                color: #414144;
+              }
+            }
+          }
+        }
+      }
+
       .search {
         i {
           color: #414144;
@@ -128,6 +149,10 @@ button {
         img {
           background-color: white;
           color: #414144;
+        }
+
+        .hamburgerMenu {
+          background-color: white;
         }
       }
     }

@@ -1333,6 +1333,18 @@ button {
 .light header nav .navbarMenu li .navbarMegaMenu li {
   color: #414144;
 }
+.light header nav .navbarMenuR {
+  background-color: whitesmoke;
+}
+.light header nav .navbarMenuR .navbarMenuUlR li a {
+  color: #414144;
+}
+.light header nav .navbarMenuR .navbarMenuUlR li:hover {
+  background-color: #a2a2a8;
+}
+.light header nav .navbarMenuR .navbarMenuUlR li .navbarMegaMenuR li {
+  color: #414144;
+}
 .light header nav .search i {
   color: #414144;
 }
@@ -1348,6 +1360,9 @@ button {
 .light header nav .themeButtons img {
   background-color: white;
   color: #414144;
+}
+.light header nav .themeButtons .hamburgerMenu {
+  background-color: white;
 }
 
 /* ------------------------ container media query --------------*/
