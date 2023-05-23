@@ -304,6 +304,7 @@ header nav {
   z-index: 10;
   background-color: #14141f;
   padding: 0 2rem;
+  border-bottom: 1px solid #292933 !important;
 }
 header nav .navLeft {
   display: flex;
@@ -340,7 +341,6 @@ header nav .navLeft .navbarMenuUl .contact:hover {
 header nav .navLeft .navbarMenuUl li {
   font-size: 0.7rem;
   color: whitesmoke;
-  font-weight: 600;
   padding: 0.5rem;
   border-radius: 0.5rem;
   position: relative;
@@ -401,7 +401,6 @@ header nav .navRight .themeButtons {
   justify-content: center;
   align-items: center;
   gap: 0.4rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 header nav .navRight .themeButtons img {
   background-color: #343444;
@@ -1313,67 +1312,42 @@ button {
 
 /* -------------------dark /light mode--------------- */
 .light {
-  background-color: var(--light-color);
+  background-color: whitesmoke;
 }
-.light .navbar__title span {
-  color: var(--dark-color);
+.light header nav {
+  background-color: whitesmoke !important;
+  border-bottom: 1px solid #bcb8ee !important;
 }
-.light button:hover i {
-  color: var(--dark-color);
+.light header nav .navbar__title span {
+  color: black;
 }
-.light #header nav {
-  background-color: var(--light-color);
+.light header nav .navbarMenu li a {
+  color: #414144;
 }
-.light #header nav .header_ul .first_ul > li > a {
-  color: var(--primary-color);
-  padding: 0 0.5rem;
-  cursor: pointer;
-  font-size: 0.8rem;
+.light header nav .navbarMenu li:hover {
+  background-color: #a2a2a8;
 }
-.light #header nav i {
-  color: var(--primary-color);
+.light header nav .navbarMenu li .navbarMegaMenu {
+  background-color: #a2a2a8;
 }
-.light #header nav .navbar__button i {
+.light header nav .navbarMenu li .navbarMegaMenu li {
+  color: #414144;
+}
+.light header nav .search i {
+  color: #414144;
+}
+.light header nav .navbar__button button {
+  background-color: whitesmoke;
+  color: #414144;
+}
+.light header nav .navbar__button button:hover {
+  background-color: var(--lightpurple-color);
   color: white;
 }
-.light .social_sticky--total {
-  background-color: var(--primary-color);
-}
-.light #hero .hero__left h2 {
-  color: var(--dark-color);
-}
-.light .Auction__box {
-  background-color: var(--light-color);
-  width: 100%;
-  height: 30rem;
-}
-.light .Auction__box .Auction__box--titles h2,
-.light .Auction__box h3 {
-  color: var(--dark-color);
-}
-.light #picks .picks__title h2,
-.light #picks p {
-  color: var(--dark-color);
-}
-.light #picks .picks__items--item p {
-  padding-top: 0.5rem;
-  color: var(--light-color);
-  font-size: 0.7rem;
-}
-.light #features .features__items--item h2 {
-  color: var(--dark-color);
-}
-.light #features .features__items--item p {
-  color: var(--dark-color);
-}
-.light #seller .seller__title h2 {
-  color: var(--dark-color);
-}
-.light #seller .seller__all .seller__up .seller__up--items .seller__up--right h4 {
-  color: var(--dark-color);
-}
-.light #seller .seller__all .seller__down .seller__down--items .seller__down--right h4 {
-  color: var(--dark-color);
+.light header nav .themeButtons i,
+.light header nav .themeButtons img {
+  background-color: white;
+  color: #414144;
 }
 
 /* ------------------------ container media query --------------*/

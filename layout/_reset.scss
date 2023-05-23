@@ -72,110 +72,62 @@ button {
 /* -------------------dark /light mode--------------- */
 
 .light {
-  background-color: var(--light-color);
+  background-color: whitesmoke;
 
-  .navbar__title {
-    span {
-      color: var(--dark-color);
-    }
-  }
+  header {
+    nav {
+      background-color: whitesmoke !important;
+      border-bottom: 1px solid #bcb8ee !important;
 
-  button:hover i {
-    color: var(--dark-color);
-  }
-
-  #header nav {
-    background-color: var(--light-color);
-
-    .header_ul .first_ul > li > a {
-      color: var(--primary-color);
-      padding: 0 0.5rem;
-      cursor: pointer;
-      font-size: 0.8rem;
-    }
-
-    i {
-      color: var(--primary-color);
-    }
-
-    .navbar__button {
-      i {
-        color: white;
-      }
-    }
-  }
-
-  .social_sticky--total {
-    background-color: var(--primary-color);
-  }
-
-  #hero {
-    .hero__left h2 {
-      color: var(--dark-color);
-    }
-  }
-
-  .Auction__box {
-    background-color: var(--light-color);
-    width: 100%;
-    height: 30rem;
-
-    .Auction__box--titles h2,
-    h3 {
-      color: var(--dark-color);
-    }
-  }
-
-  #picks {
-    .picks__title h2,
-    p {
-      color: var(--dark-color);
-      // padding: 1rem 1rem;
-    }
-
-    .picks__items--item p {
-      padding-top: 0.5rem;
-      color: var(--light-color);
-      font-size: 0.7rem;
-    }
-  }
-
-  #features {
-    .features__items--item {
-      h2 {
-        color: var(--dark-color);
+      .navbar__title {
+        span {
+          color: black;
+        }
       }
 
-      p {
-        color: var(--dark-color);
-      }
-    }
-  }
+      .navbarMenu {
+        // color: black !important;
 
-  #seller {
-    .seller__title {
-      h2 {
-        color: var(--dark-color);
-      }
-    }
-    .seller__all {
-      .seller__up {
-        .seller__up--items {
-          .seller__up--right {
-            h4 {
-              color: var(--dark-color);
+        li {
+          a {
+            color: #414144;
+          }
+          &:hover {
+            background-color: #a2a2a8;
+          }
+
+          .navbarMegaMenu {
+            background-color: #a2a2a8;
+            li {
+              color: #414144;
             }
           }
         }
       }
 
-      .seller__down {
-        .seller__down--items {
-          .seller__down--right {
-            h4 {
-              color: var(--dark-color);
-            }
+      .search {
+        i {
+          color: #414144;
+        }
+      }
+
+      .navbar__button {
+        button {
+          background-color: whitesmoke;
+          color: #414144;
+
+          &:hover {
+            background-color: var(--lightpurple-color);
+            color: white;
           }
+        }
+      }
+
+      .themeButtons {
+        i,
+        img {
+          background-color: white;
+          color: #414144;
         }
       }
     }

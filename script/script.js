@@ -28,10 +28,10 @@ const moon = document.querySelector(".moon");
 const sun = document.querySelector(".sun");
 
 moon.addEventListener("click", () => {
-  document.body.classList.add("dark");
+  document.body.className = "dark";
 });
 sun.addEventListener("click", () => {
-  document.body.classList.add("light");
+  document.body.className = "light";
 });
 
 // ------xxx----------- Dark and Light Theme ----------xxx------------
