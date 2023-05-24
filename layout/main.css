@@ -608,44 +608,42 @@ header nav .navRight .themeButtons i {
   }
 }
 #hero {
-  margin-top: 1rem;
+  width: 100%;
   height: 90vh;
+  margin-top: 4rem;
 }
-
-.hero__section {
+#hero .hero__section {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 3rem;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
 }
-.hero__section .hero__left h2 {
+#hero .hero__section .hero__left h2 {
   color: white;
   letter-spacing: 0.05rem;
   line-height: 2.5rem;
   font-size: 2rem;
 }
-.hero__section .hero__left h2 span {
+#hero .hero__section .hero__left h2 span {
   font-size: 2rem;
   color: var(--lightpurple-color);
 }
-.hero__section .hero__left p {
+#hero .hero__section .hero__left p {
   padding-top: 0.5rem;
   color: #adadb0;
   font-size: 0.7rem;
   font-weight: 100;
 }
-.hero__section .hero__left button {
+#hero .hero__section .hero__left button {
   margin-top: 1rem;
 }
-.hero__section .hero__right {
+#hero .hero__section .hero__right {
   position: relative;
 }
-.hero__section .hero__right img {
+#hero .hero__section .hero__right img {
   width: 22rem;
 }
-.hero__section .hero__right .heroCharacterImg {
+#hero .hero__section .hero__right .heroCharacterImg {
   position: absolute;
   top: 0;
   left: 4rem;
@@ -654,45 +652,10 @@ header nav .navRight .themeButtons i {
 }
 
 @media only screen and (max-width: 1200px) {
-  #hero .hero__right img {
-    width: 20rem;
-  }
-}
-@media only screen and (max-width: 1150px) {
   .hero__section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column-reverse;
   }
 }
-@media only screen and (max-width: 1032px) {
-  .hero__left h2 {
-    font-size: 1rem;
-  }
-  .hero__left h2 span {
-    font-size: 1.2rem;
-  }
-  .hero__left p {
-    font-size: 0.5rem;
-  }
-}
-@media only screen and (max-width: 950px) {
-  #hero {
-    height: 40vh;
-  }
-  .hero__section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #hero .hero__right img {
-    display: none;
-  }
-  .hero__left {
-    margin-right: 10rem;
-  }
-}
-@keyframes heroCharacterImg {}
 *,
 *::before,
 *::after {
@@ -1318,9 +1281,17 @@ button {
   font-family: inherit;
 }
 
-/* -------------------dark /light mode--------------- */
+/* ----------------------- light mode ---------------------- */
 .light {
   background-color: whitesmoke;
+}
+.light button {
+  background-color: whitesmoke;
+  color: #414144;
+}
+.light button:hover {
+  background-color: var(--lightpurple-color);
+  color: white;
 }
 .light header nav {
   background-color: whitesmoke !important;
@@ -1356,14 +1327,6 @@ button {
 .light header nav .search i {
   color: #414144;
 }
-.light header nav .navbar__button button {
-  background-color: whitesmoke;
-  color: #414144;
-}
-.light header nav .navbar__button button:hover {
-  background-color: var(--lightpurple-color);
-  color: white;
-}
 .light header nav .themeButtons i,
 .light header nav .themeButtons img {
   background-color: white;
@@ -1372,36 +1335,11 @@ button {
 .light header nav .themeButtons .hamburgerMenu {
   background-color: white;
 }
+.light #hero .hero__left h2 {
+  color: #14141f;
+}
 
-/* ------------------------ container media query --------------*/
-@media (max-width: 567px) {
-  .container {
-    width: 540px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    width: 720px;
-  }
-}
-@media (max-width: 992px) {
-  body {
-    overflow-x: hidden;
-  }
-  .container {
-    width: 960px;
-  }
-}
-@media (max-width: 1200px) {
-  .container {
-    width: 1140px;
-  }
-}
-@media (max-width: 1400px) {
-  .container {
-    width: 1320px;
-  }
-}
+/* ---------xxx-------------- light mode ----------xxx------------ */
 /* width */
 ::-webkit-scrollbar {
   width: 0.3rem;
