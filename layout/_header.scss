@@ -61,9 +61,21 @@ header {
           border-bottom-left-radius: 0;
           border-bottom-right-radius: 0;
 
+          &:hover {
+            cursor: pointer;
+            background-color: #343444;
+            i {
+              transform: rotate(180deg);
+            }
+            ul {
+              display: block;
+            }
+          }
+
           i {
             padding: 0.1rem;
             font-size: 0.3rem;
+            transition: all 0.5s ease;
           }
 
           ul {
@@ -77,14 +89,6 @@ header {
             border-radius: 0.2rem;
             width: 10rem;
             border-top-left-radius: 0;
-          }
-
-          &:hover {
-            cursor: pointer;
-            background-color: #343444;
-            ul {
-              display: block;
-            }
           }
         }
       }
@@ -306,6 +310,9 @@ header {
       &:hover {
         cursor: pointer;
         background-color: #343444;
+        i {
+          transform: rotate(180deg);
+        }
 
         .navbarMegaMenuR {
           display: block;
@@ -333,6 +340,7 @@ header {
 
     i {
       font-size: 0.3rem;
+      transition: all 0.5s ease;
     }
   }
 }

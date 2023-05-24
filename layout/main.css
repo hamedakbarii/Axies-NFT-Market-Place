@@ -347,9 +347,20 @@ header nav .navLeft .navbarMenuUl li {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+header nav .navLeft .navbarMenuUl li:hover {
+  cursor: pointer;
+  background-color: #343444;
+}
+header nav .navLeft .navbarMenuUl li:hover i {
+  transform: rotate(180deg);
+}
+header nav .navLeft .navbarMenuUl li:hover ul {
+  display: block;
+}
 header nav .navLeft .navbarMenuUl li i {
   padding: 0.1rem;
   font-size: 0.3rem;
+  transition: all 0.5s ease;
 }
 header nav .navLeft .navbarMenuUl li ul {
   display: none;
@@ -362,13 +373,6 @@ header nav .navLeft .navbarMenuUl li ul {
   border-radius: 0.2rem;
   width: 10rem;
   border-top-left-radius: 0;
-}
-header nav .navLeft .navbarMenuUl li:hover {
-  cursor: pointer;
-  background-color: #343444;
-}
-header nav .navLeft .navbarMenuUl li:hover ul {
-  display: block;
 }
 header nav .navRight {
   display: flex;
@@ -557,6 +561,9 @@ header nav .navRight .themeButtons i {
   cursor: pointer;
   background-color: #343444;
 }
+.navbarMenuR .navbarMenuUlR li:hover i {
+  transform: rotate(180deg);
+}
 .navbarMenuR .navbarMenuUlR li:hover .navbarMegaMenuR {
   display: block;
 }
@@ -577,6 +584,7 @@ header nav .navRight .themeButtons i {
 }
 .navbarMenuR .navbarMenuUlR i {
   font-size: 0.3rem;
+  transition: all 0.5s ease;
 }
 
 .activeMenu {
