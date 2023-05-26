@@ -94,6 +94,14 @@
 
 // ------------------ Responsive -------------------- //
 
+@media only screen and (min-width: 950px) {
+  .feautures__items {
+    :nth-child(4) {
+      grid-column: 2/3;
+    }
+  }
+}
+
 @media only screen and (max-width: 950px) {
   .feautures__items {
     grid-template-columns: repeat(2, 1fr) !important;
