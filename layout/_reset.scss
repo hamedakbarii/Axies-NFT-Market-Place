@@ -162,6 +162,20 @@ button {
       }
     }
   }
+
+  #features {
+    .features__items--item {
+      h2 {
+        color: #14141f;
+      }
+    }
+  }
+
+  #Auction {
+    .Auction__box {
+      background-color: whitesmoke;
+    }
+  }
 }
 
 /* ---------xxx-------------- light mode ----------xxx------------ */

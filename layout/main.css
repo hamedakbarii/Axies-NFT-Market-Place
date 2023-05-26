@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 #Auction {
   margin-top: 2rem;
+  width: 100%;
 }
 #Auction .Auction__box {
   background-color: var(--dark-color);
@@ -14,15 +15,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.5rem;
 }
 #Auction .Auction__box .Auction__box--titles h2 {
-  padding: 1rem 1rem;
-  color: var(--light-color);
+  color: whitesmoke;
   font-size: 1rem;
 }
 #Auction .Auction__box .Auction__box--titles h3 {
-  margin-right: 1rem;
-  color: var(--light-color);
+  color: whitesmoke;
   font-size: 0.5rem;
   border-bottom: 2px solid var(--lightpurple-color);
   cursor: pointer;
@@ -35,6 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 #Auction .Auction__box .Auction__box--items .Auction__box--items__item {
   display: flex;
@@ -42,39 +43,32 @@
   justify-content: center;
   align-items: center;
   background-color: #343444;
-  margin: 1rem 0.6rem;
   border: none;
   border-radius: 0.5rem;
-  padding: 1rem 1rem;
+  padding: 1rem;
   position: relative;
-  cursor: pointer;
-  transition: all 1s ease !important;
+  transition: all 1s ease;
 }
 #Auction .Auction__box .Auction__box--items .Auction__box--items__item:hover .item__product {
   opacity: 1;
 }
 #Auction .Auction__box .Auction__box--items .Auction__box--items__item .item__product {
-  font-family: inherit;
-  font-weight: 500;
   background-color: var(--light-color);
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   font-size: 0.7rem;
-  color: var(--dark-color);
-  font-weight: 400;
+  color: black;
   position: absolute;
-  top: 6rem;
-  left: 3.5rem;
+  top: 30%;
+  left: 25%;
   opacity: 0;
   display: flex;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 #Auction .Auction__box .Auction__box--items .Auction__box--items__item .item__product i {
   padding-right: 0.3rem;
   color: var(--lightpurple-color);
-}
-#Auction .Auction__box .Auction__box--items .Auction__box--items__item .item__product:hover {
-  transform: rotate(360deg);
 }
 #Auction .Auction__box .Auction__box--items .Auction__box--items__item img {
   width: 10rem;
@@ -184,14 +178,6 @@
   color: var(--lightpurple-color);
 }
 
-@media only screen and (max-width: 1260px) {
-  .Auction__box--items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 #features {
   margin-top: 4rem;
   display: flex;
@@ -1455,6 +1441,12 @@ button {
 }
 .light #hero .hero__left h2 {
   color: #14141f;
+}
+.light #features .features__items--item h2 {
+  color: #14141f;
+}
+.light #Auction .Auction__box {
+  background-color: whitesmoke;
 }
 
 /* ---------xxx-------------- light mode ----------xxx------------ */
