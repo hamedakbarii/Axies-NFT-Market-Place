@@ -3,7 +3,6 @@
   width: 100%;
 
   .Auction__box {
-    background-color: var(--dark-color);
     width: 100%;
     transition: all 1s ease;
 
@@ -38,6 +37,7 @@
       padding: 1rem;
 
       .Auction__box--items__item {
+        width: 13rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -45,7 +45,7 @@
         background-color: #343444;
         border: none;
         border-radius: 0.5rem;
-        padding: 1rem;
+        padding: 0.5rem;
         position: relative;
         transition: all 1s ease;
 
@@ -76,13 +76,14 @@
         }
 
         img {
-          width: 10rem;
+          width: 100%;
+          border-radius: 0.5rem;
         }
 
         h2 {
           color: var(--light-color);
           font-size: 0.7rem;
-          font-weight: 400;
+          font-weight: 600;
           padding-top: 1rem;
         }
 
@@ -93,24 +94,28 @@
           justify-content: space-between;
           align-items: center;
           padding-bottom: 0.5rem;
-          border-bottom: 2px solid var(--secondary-color);
+          border-bottom: 2px solid #242431;
 
           .item--bottom__left {
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 0.5rem;
 
             .item--bottom__left--right {
-              padding-left: 0.5rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              gap: 0.2rem;
 
               p {
                 color: var(--secondary-color);
-                font-size: 0.6rem;
-                padding: 0.3rem 0;
+                font-size: 0.5rem;
               }
               h4 {
-                color: var(--light-color);
-                font-size: 0.7rem;
+                color: whitesmoke;
+                font-size: 0.6rem;
                 font-weight: 400;
               }
             }
@@ -129,41 +134,23 @@
         }
 
         .item__footer {
+          padding-top: 0.5rem;
           width: 100%;
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          align-items: flex-end;
 
           .footer__right {
-            padding-top: 1rem;
-
-            button {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              border-radius: 0.5rem;
-              padding: 0.1rem 0.3rem;
-              font-size: 0.5rem;
-              background-color: var(--secondary-color);
-              border: none;
-              &:hover {
-                i {
-                  color: red;
-                }
-                color: var(--light-color);
-              }
-            }
-
-            i {
-              padding-right: 0.3rem;
-            }
+            background-color: #242431;
+            color: white;
+            font-size: 0.5rem;
+            padding: 0.2rem 0.3rem;
+            border-radius: 0.3rem;
           }
 
           .footer__left {
-            margin-top: 0.5rem;
-
             p {
-              color: var(--light-color);
+              color: #adadb0;
               font-size: 0.6rem;
             }
 
@@ -183,24 +170,38 @@
         }
 
         .item__timer {
+          text-align: center;
           display: flex;
           justify-content: center;
           align-items: center;
+          gap: 0.3rem;
+          padding: 0.3rem 0.7rem;
           background-color: var(--likegray-color);
-          padding: 0.2rem 0.5rem;
           border-radius: 0.5rem;
           font-size: 0.7rem;
-          color: var(--light-color);
-          font-weight: 400;
+          font-weight: 500;
+          color: whitesmoke;
           position: absolute;
-          top: 9.5rem;
-          left: 3rem;
+          top: 52%;
+          left: 30%;
+          z-index: 1;
           i {
-            padding-right: 0.3rem;
             color: var(--lightpurple-color);
           }
         }
+
+        .countDown {
+          font-size: 0.5rem;
+        }
       }
     }
+  }
+}
+
+.swiper {
+  width: 55rem !important;
+
+  .swiper-slide {
+    width: 12rem !important;
   }
 }

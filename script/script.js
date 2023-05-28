@@ -76,3 +76,35 @@ hamburger.addEventListener("click", () => {
 });
 
 // ----xxx-------- Hamburger Menu --------------xxx---------------- //
+
+// ------------------- Auction Section countDown ---------------------- //
+
+const countDown = document.querySelector(".countDown");
+
+let countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+let interval = setInterval(() => {
+  let now = new Date().getTime();
+  let distance = countDownDate - now;
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  countDown.innerHTML =
+    days + " : " + hours + " : " + minutes + " : " + seconds;
+
+  if (distance < 0) {
+    clearInterval(interval);
+    countDown.innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+//
+
+// ------------------- Auction Section like button ---------------------- //
+
+const likeBtn = document.querySelector(".likeBtn");
+likeBtn.addEventListener("click", () => {
+  console.log("liking");
+});
