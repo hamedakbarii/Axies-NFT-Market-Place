@@ -44,7 +44,7 @@
         align-items: center;
         background-color: #343444;
         border: none;
-        border-radius: 0.5rem;
+        border-radius: 1rem;
         padding: 0.5rem;
         position: relative;
         transition: all 1s ease;
@@ -77,7 +77,7 @@
 
         img {
           width: 100%;
-          border-radius: 0.5rem;
+          border-radius: 1rem;
         }
 
         h2 {
@@ -209,16 +209,48 @@
     position: static;
   }
 
-  .swiper-button-prev::after {
-    font-size: 0.5rem;
-    // text-align: center;
-    color: black;
-    font-weight: bold;
-    padding: 0.5rem;
-    border: 2px solid black;
-    border-radius: 50%;
-    // position: absolute !important;
-    background-color: whitesmoke;
-    margin-left: 2rem;
+  .swiper-button-prev {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    left: -24px !important;
+    top: 239px !important;
+    transition: all 0.3s ease !important;
+
+    &::after {
+      border-radius: 50% !important;
+      text-align: center;
+      font-size: 0.7rem;
+      color: black;
+      font-weight: bolder;
+      padding: 0.5rem;
+      border: 3px solid black;
+      transition: all 0.3s ease !important;
+    }
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+  .swiper-button-next {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    right: -20px !important;
+    top: 239px !important;
+    transition: all 0.3s ease !important;
+
+    &::after {
+      border-radius: 50% !important;
+      text-align: center;
+      font-size: 0.7rem;
+      color: black;
+      font-weight: bolder;
+      padding: 0.5rem;
+      border: 3px solid black;
+      transition: all 0.3s ease !important;
+    }
+
+    &:hover {
+      scale: 1.1;
+    }
   }
 }
