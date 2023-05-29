@@ -204,4 +204,21 @@
   .swiper-slide {
     width: 12rem !important;
   }
+
+  .swiper-pagination {
+    position: static;
+  }
+
+  .swiper-button-prev::after {
+    font-size: 0.5rem;
+    // text-align: center;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    // position: absolute !important;
+    background-color: whitesmoke;
+    margin-left: 2rem;
+  }
 }

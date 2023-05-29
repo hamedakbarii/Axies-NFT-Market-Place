@@ -79,32 +79,38 @@ hamburger.addEventListener("click", () => {
 
 // ------------------- Auction Section countDown ---------------------- //
 
-const countDown = document.querySelector(".countDown");
+const countDown = document.querySelectorAll(".countDown");
 
-let countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+let countDownDate = new Date("october 5, 2023 15:37:25").getTime();
 
-let interval = setInterval(() => {
-  let now = new Date().getTime();
-  let distance = countDownDate - now;
-  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+countDown.forEach((item) => {
+  let interval = setInterval(() => {
+    let now = new Date().getTime();
+    let distance = countDownDate - now;
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  countDown.innerHTML =
-    days + " : " + hours + " : " + minutes + " : " + seconds;
+    item.innerHTML = days + " : " + hours + " : " + minutes + " : " + seconds;
 
-  if (distance < 0) {
-    clearInterval(interval);
-    countDown.innerHTML = "EXPIRED";
-  }
-}, 1000);
+    if (distance < 0) {
+      clearInterval(interval);
+      item.innerHTML = "EXPIRED";
+    }
+  }, 1000);
+});
 
 //
 
 // ------------------- Auction Section like button ---------------------- //
 
-const likeBtn = document.querySelector(".likeBtn");
-likeBtn.addEventListener("click", () => {
-  console.log("liking");
+const likeBtns = document.querySelectorAll(".likeBtn");
+
+likeBtns.forEach((likeBtn) => {
+  likeBtn.addEventListener("click", () => {
+    console.log("kose zane amir");
+  });
 });

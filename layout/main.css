@@ -177,6 +177,19 @@
 .swiper .swiper-slide {
   width: 12rem !important;
 }
+.swiper .swiper-pagination {
+  position: static;
+}
+.swiper .swiper-button-prev::after {
+  font-size: 0.5rem;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  margin-left: 2rem;
+}
 
 #features {
   margin-top: 4rem;
@@ -1601,8 +1614,8 @@ button {
 .social_sticky--total {
   position: fixed;
   padding: 0.5rem 0.3rem;
-  left: 1rem;
-  top: 11rem;
+  left: 6%;
+  top: 30%;
   border-radius: 1rem;
   z-index: 99;
   transition: all 0.2s ease-in-out;
