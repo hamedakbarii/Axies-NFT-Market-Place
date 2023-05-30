@@ -207,6 +207,10 @@
 
   .swiper-pagination {
     position: static;
+
+    .swiper-pagination-bullet {
+      background-color: white !important;
+    }
   }
 
   .swiper-button-prev {

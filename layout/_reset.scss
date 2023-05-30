@@ -51,11 +51,11 @@ a {
   box-shadow: 0;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3 ease;
-}
-
-.btn:hover {
   cursor: pointer;
-  background-color: var(--lightpurple-color);
+
+  &:hover {
+    background-color: var(--lightpurple-color);
+  }
 }
 
 .container {
@@ -179,6 +179,17 @@ button {
         h2,
         h3 {
           color: #14141f;
+        }
+      }
+
+      .Auction__box--items__item {
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        h2,
+        h3,
+        h4 {
+          color: black !important;
         }
       }
     }

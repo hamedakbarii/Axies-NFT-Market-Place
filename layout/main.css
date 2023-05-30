@@ -180,6 +180,9 @@
 .swiper .swiper-pagination {
   position: static;
 }
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  background-color: white !important;
+}
 .swiper .swiper-button-prev {
   width: 3.5rem !important;
   height: 3.5rem !important;
@@ -1411,10 +1414,9 @@ a {
   box-shadow: 0;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3 ease;
-}
-
-.btn:hover {
   cursor: pointer;
+}
+.btn:hover {
   background-color: var(--lightpurple-color);
 }
 
@@ -1494,6 +1496,15 @@ button {
 .light #Auction .Auction__box .Auction__box--titles h2,
 .light #Auction .Auction__box .Auction__box--titles h3 {
   color: #14141f;
+}
+.light #Auction .Auction__box .Auction__box--items__item {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.light #Auction .Auction__box .Auction__box--items__item h2,
+.light #Auction .Auction__box .Auction__box--items__item h3,
+.light #Auction .Auction__box .Auction__box--items__item h4 {
+  color: black !important;
 }
 
 /* ---------xxx-------------- light mode ----------xxx------------ */
@@ -1644,7 +1655,7 @@ button {
 .social_sticky--total {
   position: fixed;
   padding: 0.5rem 0.3rem;
-  left: 6%;
+  left: 4.5%;
   top: 30%;
   border-radius: 1rem;
   z-index: 99;
