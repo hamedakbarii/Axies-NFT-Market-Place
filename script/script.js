@@ -107,10 +107,15 @@ countDown.forEach((item) => {
 
 // ------------------- Auction Section like button ---------------------- //
 
-const likeBtns = document.querySelectorAll(".likeBtn");
+// const likeBtns = document.querySelectorAll(".likeBtn");
+// const likenumbs = document.querySelectorAll(".likenumbs");
 
-likeBtns.forEach((likeBtn) => {
-  likeBtn.addEventListener("click", () => {
-    console.log("kose zane amir");
-  });
-});
+// likenumbs.forEach((numb) => {
+//   numb.innerHTML = Math.floor(Math.random() * 10);
+// });
+
+// likeBtns.forEach((likeBtn) => {
+//   likeBtn.addEventListener("click", () => {
+//     console.log("liking");
+//   });
+// });

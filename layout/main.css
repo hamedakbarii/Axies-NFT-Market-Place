@@ -1506,6 +1506,21 @@ button {
 .light #Auction .Auction__box .Auction__box--items__item h4 {
   color: black !important;
 }
+.light #Auction .Auction__box .Auction__box--items__item .item__footer .footer__paragraph {
+  color: black !important;
+}
+.light #Auction .Auction__box .Auction__box--items__item .item__footer .likeBtn {
+  background-color: transparent;
+  color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.light #Auction .Auction__box .Auction__box--items__item .item--bottom .item--bottom__right button {
+  color: white;
+}
+.light #Auction .Auction__box .Auction__box--items__item .item__timer {
+  background-color: white;
+  color: black;
+}
 
 /* ---------xxx-------------- light mode ----------xxx------------ */
 /* width */
