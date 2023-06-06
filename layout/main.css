@@ -807,6 +807,11 @@ header nav .navRight .themeButtons i {
     gap: 2rem;
   }
 }
+.planet {
+  font-weight: 600;
+  font-family: italic;
+}
+
 *,
 *::before,
 *::after {

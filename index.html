@@ -190,10 +190,7 @@
                 Discover, and collect<br />extraordinary<br />
                 <span class="monster-word">Monster</span> NFTs
               </h2>
-              <p>
-                Marketplace for Moster Character Collectons Non Fungible Token
-                NFTs
-              </p>
+              <p class="heroParagraph"></p>
 
               <div class="hero__left--buttons">
                 <button class="btn">
@@ -1573,5 +1570,22 @@
     </script>
 
     <script src="./script/script.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+      const heroParagraph = document.querySelector(".heroParagraph");
+
+      document.addEventListener("DOMContentLoaded", () => {
+        let typewriter = new Typewriter(heroParagraph);
+
+        typewriter
+          .typeString("Welcome to America's Most Trusted Cryptocurrency.")
+          .start()
+          .pauseFor(100)
+          .deleteAll()
+          .typeString(
+            "The Greatest Marketplace for Monster Character Collections Non Fungible Token NFTs on the <span class='planet'>Planet...</span>"
+          );
+      });
+    </script>
   </body>
 </html>
