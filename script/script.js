@@ -119,6 +119,3 @@ countDown.forEach((item) => {
 //     console.log("liking");
 //   });
 // });
-
-// ------------------------------ Type Writer ----------------------------------//
-import Typewriter from "/node_modules/typewriter-effect/dist/core";
