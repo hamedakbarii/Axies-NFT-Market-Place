@@ -332,7 +332,7 @@ header nav {
   display: flex;
   justify-content: space-between !important;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 10;
   background-color: #14141f;
@@ -1157,16 +1157,10 @@ ul {
   color: var(--light-color);
   font-size: 0.5rem;
   border-bottom: 2px solid var(--lightpurple-color);
-  cursor: pointer;
   transition: padding-bottom 0.3s ease;
 }
 #picks .picks__title p:hover {
   padding-bottom: 0.3rem;
-}
-@media only screen and (max-width: 1290px) {
-  #picks .picks__title p {
-    display: none;
-  }
 }
 #picks .picks__buttons {
   width: 100%;
@@ -1175,10 +1169,7 @@ ul {
   align-items: center;
 }
 #picks .picks__buttons button {
-  letter-spacing: 0.04rem;
-}
-#picks .picks__buttons button:hover i {
-  color: var(--lightpurple-color);
+  font-size: 0.6rem;
 }
 #picks .picks__buttons .picks__buttons--left i {
   padding-right: 0.3rem;
@@ -1194,55 +1185,6 @@ ul {
 }
 #picks .picks__buttons .picks__buttons--right i {
   padding-right: 0.3rem;
-}
-@media only screen and (max-width: 1300px) {
-  #picks .picks__buttons .picks__buttons--right {
-    margin-right: 1rem;
-  }
-}
-@media only screen and (max-width: 1250px) {
-  #picks .picks__buttons .picks__buttons--right {
-    margin-right: 5rem;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  #picks .picks__buttons .picks__buttons--right {
-    margin-right: 6rem;
-  }
-}
-@media only screen and (max-width: 1150px) {
-  #picks .picks__buttons .picks__buttons--right {
-    margin-right: 7rem;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  #picks .picks__buttons .picks__buttons--right {
-    margin-right: 10rem;
-  }
-}
-@media only screen and (max-width: 1050px) {
-  #picks .picks__buttons .picks__buttons--right {
-    margin-right: 12rem;
-  }
-}
-@media only screen and (max-width: 1006px) {
-  #picks .picks__buttons {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  #picks .picks__buttons .picks__buttons--left {
-    display: flex;
-    flex-direction: column;
-  }
-  #picks .picks__buttons .picks__buttons--right {
-    padding-left: 1rem;
-  }
-  #picks .picks__buttons .picks__buttons--right button {
-    width: 7rem;
-    height: 7rem;
-    line-height: 1rem;
-  }
 }
 #picks .picks__items {
   margin-top: 1rem;
@@ -1261,12 +1203,12 @@ ul {
   border-radius: 0.5rem;
   padding: 0.5rem;
   position: relative;
-  cursor: pointer;
   transition: all 0.3s ease;
   width: 13rem;
 }
 #picks .picks__items .picks__items--item img {
-  width: 10rem;
+  width: 100%;
+  border-radius: 0.5rem;
 }
 #picks .picks__items .picks__items--item h2 {
   padding-top: 0.5rem;
@@ -1343,37 +1285,21 @@ ul {
   padding: 0.3rem 0;
   font-weight: 400;
 }
-@media only screen and (max-width: 1304px) {
-  #picks .picks__items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 80%;
-  }
-}
-@media only screen and (max-width: 1209px) {
-  #picks .picks__items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media only screen and (max-width: 998px) {
-  #picks .picks__items {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 #picks .picks__footer--button {
   margin-top: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 998px) {
-  #picks .picks__footer--button {
-    justify-content: flex-start;
+
+@media only screen and (max-width: 768px) {
+  .picks__items {
+    grid-template-columns: repeat(1, 1fr) !important;
+    justify-content: center !important;
+    align-self: center !important;
+    align-items: center !important;
   }
 }
-
 *,
 *::before,
 *::after {
@@ -1640,6 +1566,21 @@ button {
   box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 20px -6px, rgba(255, 255, 255, 0.2) 0px 3px 58px -8px, rgba(255, 255, 255, 0.1) 0px 4px 70px -10px;
 }
 
+@media only screen and (max-width: 1023px) {
+  .seller__items {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media only screen and (max-width: 790px) {
+  .seller__items {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .seller__items {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
 /* ***************************** Sticky ************************************ */
 .social_sticky--total {
   position: fixed;

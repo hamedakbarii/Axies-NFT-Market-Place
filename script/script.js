@@ -110,12 +110,19 @@ countDown.forEach((item) => {
 // const likeBtns = document.querySelectorAll(".likeBtn");
 // const likenumbs = document.querySelectorAll(".likenumbs");
 
-// likenumbs.forEach((numb) => {
-//   numb.innerHTML = Math.floor(Math.random() * 10);
-// });
-
 // likeBtns.forEach((likeBtn) => {
 //   likeBtn.addEventListener("click", () => {
-//     console.log("liking");
+//     likenumbs.forEach((likeNumb) => {
+
+//     });
 //   });
+// });
+
+// -------------------------- Navbar scroll ----------------------//
+// const nav = document.querySelector("nav");
+
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY > 70) {
+//     nav.style.margin = "2rem";
+//   }
 // });
