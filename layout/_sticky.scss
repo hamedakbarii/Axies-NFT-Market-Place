@@ -25,3 +25,9 @@
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
+
+@media only screen and (max-width: 768px) {
+  .social_sticky--total {
+    display: none;
+  }
+}

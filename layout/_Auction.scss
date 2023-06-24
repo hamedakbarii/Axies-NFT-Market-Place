@@ -258,3 +258,10 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    display: none !important;
+  }
+}

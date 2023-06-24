@@ -175,6 +175,15 @@ button {
     .Auction__box {
       background-color: whitesmoke;
 
+      .Auction__box--items {
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+          color: gray;
+          border: 3px solid gray;
+          // z-index: 99 !important;
+        }
+      }
+
       .Auction__box--titles {
         h2,
         h3 {
