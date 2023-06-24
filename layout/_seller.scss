@@ -3,6 +3,7 @@
   width: 100%;
 
   .sellerWrapper {
+    width: 100%;
     .sellerTitle {
       color: whitesmoke;
       padding: 1rem;
@@ -13,7 +14,11 @@
       width: 100%;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 0.5rem;
+      // display: flex;
+      // flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
 
       .seller__items--item {
         width: 100%;

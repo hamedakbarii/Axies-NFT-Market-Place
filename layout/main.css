@@ -698,7 +698,7 @@ header nav .navRight .themeButtons i {
   position: relative;
 }
 #hero .hero__section .hero__right img {
-  width: 22rem;
+  width: 20rem;
 }
 #hero .hero__section .hero__right .heroCharacterImg {
   position: absolute;
@@ -1292,6 +1292,16 @@ ul {
   align-items: center;
 }
 
+@media only screen and (max-width: 1315px) {
+  .picks__items {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .picks__items {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
 @media only screen and (max-width: 768px) {
   .picks__items {
     grid-template-columns: repeat(1, 1fr) !important;
@@ -1505,6 +1515,9 @@ button {
   margin-top: 2rem;
   width: 100%;
 }
+#seller .sellerWrapper {
+  width: 100%;
+}
 #seller .sellerWrapper .sellerTitle {
   color: whitesmoke;
   padding: 1rem;
@@ -1514,7 +1527,9 @@ button {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 #seller .sellerWrapper .seller__items .seller__items--item {
   width: 100%;
