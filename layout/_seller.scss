@@ -14,14 +14,11 @@
       width: 100%;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      // display: flex;
-      // flex-wrap: wrap;
       gap: 1rem;
       align-items: center;
       justify-content: center;
 
       .seller__items--item {
-        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -55,6 +52,7 @@
         }
 
         .sellerUserDetails {
+          width: 65%;
           display: flex;
           flex-direction: column;
           gap: 0.5rem;
@@ -93,7 +91,18 @@
   }
 }
 @media only screen and (max-width: 570px) {
+  .sellerWrapper {
+    text-align: center;
+  }
   .seller__items {
     grid-template-columns: repeat(1, 1fr) !important;
+
+    .seller__items--item {
+      width: 250px;
+      margin: 0 auto;
+      .sellerUserDetails {
+        width: 50%;
+      }
+    }
   }
 }

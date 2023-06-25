@@ -1553,11 +1553,16 @@
         loop: true,
         spaceBetween: 40,
         autoplay: {
-          delay: 2000,
+          delay: 3000,
           disableOnInteraction: false,
         },
 
         slidesPerView: "auto",
+        breakpoints: {
+          540: {
+            centeredSlides: true,
+          },
+        },
 
         // If we need pagination
         pagination: {
@@ -1574,7 +1579,9 @@
     </script>
 
     <script src="./script/script.js"></script>
+
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <script>
       const heroParagraph = document.querySelector(".heroParagraph");
 

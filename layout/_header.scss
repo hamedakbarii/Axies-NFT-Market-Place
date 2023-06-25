@@ -1,15 +1,14 @@
 header {
   nav {
-    min-height: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-between !important;
     align-items: center;
-    position: sticky;
     top: 0;
+    position: sticky;
     z-index: 10;
     background-color: #14141f;
-    padding: 0 2rem;
+    padding: 0.5rem 2rem;
     border-bottom: 1px solid #292933 !important;
 
     .navLeft {
@@ -277,6 +276,18 @@ header {
   color: white;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+.navScroll {
+  position: fixed;
+  margin: 0 auto;
+  top: 10px;
+  width: 95%;
+  left: 0;
+  right: 0;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  transform: rotateX(360deg);
 }
 
 // ---------- Responsive navbar menu -------------------//

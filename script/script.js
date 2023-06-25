@@ -119,10 +119,12 @@ countDown.forEach((item) => {
 // });
 
 // -------------------------- Navbar scroll ----------------------//
-// const nav = document.querySelector("nav");
+const nav = document.querySelector(".navbar");
 
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY > 70) {
-//     nav.style.margin = "2rem";
-//   }
-// });
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 0) {
+    nav.classList.add("navScroll");
+  } else {
+    nav.classList.remove("navScroll");
+  }
+});
