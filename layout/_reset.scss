@@ -73,6 +73,16 @@ button {
 .light {
   background-color: whitesmoke;
 
+  .serachModal{
+    background-color: whitesmoke ;
+    border: 1px solid #2e3034;
+
+    input {
+      color: black;
+    }
+  
+  }
+
   button {
     background-color: whitesmoke;
     color: #414144;
