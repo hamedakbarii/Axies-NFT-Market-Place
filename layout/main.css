@@ -92,6 +92,9 @@
   align-items: center;
   gap: 0.5rem;
 }
+#Auction .Auction__box .Auction__box--items .Auction__box--items__item .item--bottom .item--bottom__left .item--bottom__left--left img {
+  width: 2rem;
+}
 #Auction .Auction__box .Auction__box--items .Auction__box--items__item .item--bottom .item--bottom__left .item--bottom__left--right {
   display: flex;
   flex-direction: column;

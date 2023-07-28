@@ -102,6 +102,12 @@
             align-items: center;
             gap: 0.5rem;
 
+            .item--bottom__left--left{
+              img{
+                width: 2rem;
+              }
+            }
+
             .item--bottom__left--right {
               display: flex;
               flex-direction: column;
