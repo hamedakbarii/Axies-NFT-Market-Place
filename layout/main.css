@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 #Auction {
   margin-top: 2rem;
-  width: 100%;
+  width: 100% !important;
+  padding: 2rem 0;
 }
 #Auction .Auction__box {
-  width: 100%;
+  width: 100% !important;
   transition: all 1s ease;
 }
 #Auction .Auction__box .Auction__box--titles {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding: 1rem 0;
 }
 #Auction .Auction__box .Auction__box--titles h2 {
   color: whitesmoke;
@@ -28,10 +29,10 @@
   padding-bottom: 0.3rem;
 }
 #Auction .Auction__box .Auction__box--items {
+  width: 100% !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
 }
 #Auction .Auction__box .Auction__box--items .Auction__box--items__item {
   width: 13rem;
@@ -172,7 +173,7 @@
 }
 
 .swiper {
-  width: 55rem !important;
+  width: 100% !important;
 }
 .swiper .swiper-slide {
   width: 12rem !important;
@@ -222,6 +223,10 @@
 }
 .swiper .swiper-button-next:hover {
   scale: 1.1;
+}
+
+.swiper-wrapper {
+  width: 100% !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -884,12 +889,14 @@ header nav .navRight .themeButtons i {
   padding-right: 0.3rem;
 }
 #picks .picks__items {
+  width: 100%;
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.8rem;
 }
 #picks .picks__items .picks__items--item {
+  justify-self: center;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
@@ -918,7 +925,7 @@ header nav .navRight .themeButtons i {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 0.7rem;
-  border-bottom: 2px solid var(--light-color);
+  border-bottom: 1px solid var(--light-color);
 }
 #picks .picks__items .picks__items--item .item--bottom .item--bottom__left {
   width: 100%;
@@ -1065,7 +1072,9 @@ a {
 }
 
 .container {
+  max-width: 95%;
   width: 100%;
+  margin: 0 auto;
   padding: 0 2rem;
 }
 
@@ -1177,6 +1186,44 @@ button {
   background-color: white;
   color: black;
 }
+.light #Auction .swiper-pagination-bullet {
+  background-color: var(--dark-color) !important;
+}
+.light #picks .picks__title h2,
+.light #picks p {
+  color: var(--dark-color);
+}
+.light #picks .picks__items .picks__items--item {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.light #picks .picks__items .picks__items--item h2 {
+  color: var(--dark-color);
+}
+.light #picks .picks__items .picks__items--item .item--bottom {
+  border-bottom: 1px solid gray;
+}
+.light #picks .picks__items .picks__items--item .item--bottom .item--bottom__left .item--bottom__left--right h4 {
+  color: var(--dark-color);
+}
+.light #picks .picks__items .picks__items--item .item--bottom .item--bottom__right .btn {
+  color: var(--light-color);
+}
+.light #picks .picks__items .picks__items--item .item__footer .footer__left h6 {
+  color: var(--dark-color);
+}
+.light #picks .picks__items .picks__items--item .item__footer .footer__left .footer__left--text p {
+  color: var(--dark-color);
+}
+.light #seller {
+  background-color: white;
+}
+.light #seller .sellerWrapper h2 {
+  color: var(--dark-color);
+}
+.light #seller .sellerWrapper .seller__items .seller__items--item .sellerUserDetails h2 {
+  color: black;
+}
 
 /* ---------xxx-------------- light mode ----------xxx------------ */
 /* width */
@@ -1217,6 +1264,7 @@ button {
 
 #seller {
   margin-top: 2rem;
+  padding: 1.5rem;
   width: 100%;
 }
 #seller .sellerWrapper {

@@ -63,12 +63,14 @@
   }
 
   .picks__items {
+    width: 100%;
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.8rem;
 
     .picks__items--item {
+      justify-self: center;
       font-size: 1rem;
       display: flex;
       flex-direction: column;
@@ -99,7 +101,7 @@
         justify-content: space-between;
         align-items: center;
         padding-bottom: 0.7rem;
-        border-bottom: 2px solid var(--light-color);
+        border-bottom: 1px solid var(--light-color);
 
         .item--bottom__left {
           width: 100%;
@@ -201,7 +203,6 @@
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .picks__items {
     grid-template-columns: repeat(1, 1fr) !important;

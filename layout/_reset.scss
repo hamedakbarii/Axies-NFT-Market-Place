@@ -59,7 +59,9 @@ a {
 }
 
 .container {
+  max-width: 95%;
   width: 100%;
+  margin: 0 auto;
   padding: 0 2rem;
 }
 
@@ -73,14 +75,13 @@ button {
 .light {
   background-color: whitesmoke;
 
-  .serachModal{
-    background-color: whitesmoke ;
+  .serachModal {
+    background-color: whitesmoke;
     border: 1px solid #2e3034;
 
     input {
       color: black;
     }
-  
   }
 
   button {
@@ -236,6 +237,67 @@ button {
           background-color: white;
           color: black;
         }
+      }
+    }
+    .swiper-pagination-bullet {
+      background-color: var(--dark-color) !important;
+    }
+  }
+
+  #picks {
+    .picks__title h2,
+    p {
+      color: var(--dark-color);
+    }
+
+    .picks__items .picks__items--item {
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+      h2 {
+        color: var(--dark-color);
+      }
+
+      .item--bottom {
+        .item--bottom__left {
+          .item--bottom__left--right {
+            h4 {
+              color: var(--dark-color);
+            }
+          }
+        }
+        .item--bottom__right {
+          .btn {
+            color: var(--light-color);
+          }
+        }
+
+        border-bottom: 1px solid gray;
+      }
+
+      .item__footer {
+        .footer__left {
+          h6 {
+            color: var(--dark-color);
+          }
+          .footer__left--text {
+            p {
+              color: var(--dark-color);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #seller {
+    background-color: white;
+    .sellerWrapper {
+      h2 {
+        color: var(--dark-color);
+      }
+      .seller__items .seller__items--item .sellerUserDetails h2 {
+        color: black;
       }
     }
   }
