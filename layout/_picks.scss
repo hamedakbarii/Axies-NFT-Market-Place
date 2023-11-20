@@ -32,36 +32,6 @@
     }
   }
 
-  .picks__buttons {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    button {
-      font-size: 0.6rem;
-    }
-
-    .picks__buttons--left {
-      i {
-        padding-right: 0.3rem;
-      }
-      button {
-        width: 7rem;
-        margin: 0.1rem;
-      }
-    }
-
-    .picks__buttons--right {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      i {
-        padding-right: 0.3rem;
-      }
-    }
-  }
-
   .picks__items {
     width: 100%;
     margin-top: 1rem;
@@ -193,12 +163,14 @@
   }
 }
 
+// ---- Responsive ------- //
+
 @media only screen and (max-width: 1315px) {
   .picks__items {
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1050px) {
   .picks__items {
     grid-template-columns: repeat(2, 1fr) !important;
   }
@@ -206,8 +178,5 @@
 @media only screen and (max-width: 768px) {
   .picks__items {
     grid-template-columns: repeat(1, 1fr) !important;
-    justify-content: center !important;
-    align-self: center !important;
-    align-items: center !important;
   }
 }

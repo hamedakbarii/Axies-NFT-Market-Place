@@ -3,6 +3,7 @@
   margin-top: 2rem;
   width: 100% !important;
   padding: 2rem 0;
+  background-color: black;
 }
 #Auction .Auction__box {
   width: 100% !important;
@@ -239,6 +240,7 @@
   margin-top: 4rem;
   display: flex;
   width: 100%;
+  padding: 2rem;
 }
 #features .feautures__items {
   display: grid;
@@ -334,14 +336,14 @@
 header nav {
   width: 100%;
   display: flex;
-  justify-content: space-between !important;
+  justify-content: space-between;
   align-items: center;
   top: 0;
   position: sticky;
   z-index: 10;
   background-color: #14141f;
-  padding: 0.5rem 2rem;
-  border-bottom: 1px solid #292933 !important;
+  padding: 0.5rem;
+  border-bottom: 1px solid #292933;
 }
 header nav .navLeft {
   display: flex;
@@ -445,6 +447,7 @@ header nav .navRight .themeButtons {
 }
 header nav .navRight .themeButtons img {
   background-color: #343444;
+  width: 1.5rem;
   padding: 0.4rem;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -641,20 +644,18 @@ header nav .navRight .themeButtons i {
   display: flex;
 }
 
-@media only screen and (max-width: 1250px) {
-  .navbar__button {
-    display: none !important;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .navbarMenu {
-    display: none !important;
-  }
-  .search {
-    display: none !important;
+@media only screen and (max-width: 1170px) {
+  .navLeft .navbarMenu {
+    display: none;
   }
   .hamburgerMenu {
     display: flex;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .navRight .search,
+  .navRight .navbar__button {
+    display: none;
   }
 }
 #hero {
@@ -827,14 +828,19 @@ header nav .navRight .themeButtons i {
 @media only screen and (max-width: 1200px) {
   .hero__section {
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
   }
 }
-.planet {
-  font-weight: 600;
-  font-family: italic;
+@media only screen and (max-width: 500px) {
+  .hero__right img {
+    width: 17rem !important;
+  }
+  .hero__right .heroCharacterImg {
+    width: 10rem !important;
+  }
 }
-
 #picks {
   width: 100%;
   margin-top: 3rem;
@@ -863,30 +869,6 @@ header nav .navRight .themeButtons i {
 }
 #picks .picks__title p:hover {
   padding-bottom: 0.3rem;
-}
-#picks .picks__buttons {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#picks .picks__buttons button {
-  font-size: 0.6rem;
-}
-#picks .picks__buttons .picks__buttons--left i {
-  padding-right: 0.3rem;
-}
-#picks .picks__buttons .picks__buttons--left button {
-  width: 7rem;
-  margin: 0.1rem;
-}
-#picks .picks__buttons .picks__buttons--right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#picks .picks__buttons .picks__buttons--right i {
-  padding-right: 0.3rem;
 }
 #picks .picks__items {
   width: 100%;
@@ -1001,7 +983,7 @@ header nav .navRight .themeButtons i {
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1050px) {
   .picks__items {
     grid-template-columns: repeat(2, 1fr) !important;
   }
@@ -1009,9 +991,6 @@ header nav .navRight .themeButtons i {
 @media only screen and (max-width: 768px) {
   .picks__items {
     grid-template-columns: repeat(1, 1fr) !important;
-    justify-content: center !important;
-    align-self: center !important;
-    align-items: center !important;
   }
 }
 *,
@@ -1040,6 +1019,11 @@ html {
   scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 1rem;
+  }
+}
 body {
   background-color: var(--primary-color);
   position: relative;
@@ -1075,7 +1059,6 @@ a {
   max-width: 95%;
   width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
 }
 
 button {
@@ -1147,10 +1130,13 @@ button {
 .light #hero .hero__left h2 {
   color: #14141f;
 }
+.light #features {
+  background-color: white;
+}
 .light #features .features__items--item h2 {
   color: #14141f;
 }
-.light #Auction .Auction__box {
+.light #Auction {
   background-color: whitesmoke;
 }
 .light #Auction .Auction__box .Auction__box--items .swiper-button-prev::after,
@@ -1224,8 +1210,10 @@ button {
 .light #seller .sellerWrapper .seller__items .seller__items--item .sellerUserDetails h2 {
   color: black;
 }
+.light #footer {
+  background-color: #333;
+}
 
-/* ---------xxx-------------- light mode ----------xxx------------ */
 /* width */
 ::-webkit-scrollbar {
   width: 0.3rem;
@@ -1280,8 +1268,6 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  align-items: center;
-  justify-content: center;
 }
 #seller .sellerWrapper .seller__items .seller__items--item {
   display: flex;
@@ -1351,7 +1337,7 @@ button {
     grid-template-columns: repeat(1, 1fr) !important;
   }
   .seller__items .seller__items--item {
-    width: 250px;
+    width: 150px;
     margin: 0 auto;
   }
   .seller__items .seller__items--item .sellerUserDetails {

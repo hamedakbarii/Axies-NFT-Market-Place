@@ -26,6 +26,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
 body {
   background-color: var(--primary-color);
   position: relative;
@@ -62,7 +68,6 @@ a {
   max-width: 95%;
   width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
 }
 
 button {
@@ -175,6 +180,7 @@ button {
   }
 
   #features {
+    background-color: white;
     .features__items--item {
       h2 {
         color: #14141f;
@@ -183,15 +189,14 @@ button {
   }
 
   #Auction {
-    .Auction__box {
-      background-color: whitesmoke;
+    background-color: whitesmoke;
 
+    .Auction__box {
       .Auction__box--items {
         .swiper-button-prev::after,
         .swiper-button-next::after {
           color: gray;
           border: 3px solid gray;
-          // z-index: 99 !important;
         }
       }
 
@@ -301,11 +306,13 @@ button {
       }
     }
   }
+
+  #footer {
+    background-color: #333;
+  }
 }
 
-/* ---------xxx-------------- light mode ----------xxx------------ */
-
-//--------------------------- scroll bar -------------------------- //
+//----------- scroll bar -------------//
 
 /* width */
 ::-webkit-scrollbar {

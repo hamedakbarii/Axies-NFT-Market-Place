@@ -16,8 +16,6 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1rem;
-      align-items: center;
-      justify-content: center;
 
       .seller__items--item {
         display: flex;
@@ -81,6 +79,8 @@
   }
 }
 
+// -- Responsive -- //
+
 @media only screen and (max-width: 1023px) {
   .seller__items {
     grid-template-columns: repeat(3, 1fr) !important;
@@ -99,7 +99,7 @@
     grid-template-columns: repeat(1, 1fr) !important;
 
     .seller__items--item {
-      width: 250px;
+      width: 150px;
       margin: 0 auto;
       .sellerUserDetails {
         width: 50%;

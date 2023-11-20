@@ -186,16 +186,23 @@
   }
 }
 
-// ----------------------- Responsive ----------------------------
+// --------- Responsive ------------ //
 
 @media only screen and (max-width: 1200px) {
   .hero__section {
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
   }
 }
-
-.planet {
-  font-weight: 600;
-  font-family: italic;
+@media only screen and (max-width: 500px) {
+  .hero__right {
+    img {
+      width: 17rem !important;
+    }
+    .heroCharacterImg {
+      width: 10rem !important;
+    }
+  }
 }
