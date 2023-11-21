@@ -19,6 +19,9 @@
 
       .item__paragraphs {
         padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
 
         p a {
           color: var(--secondary-color);
@@ -47,11 +50,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+
       .item__input {
         margin: 1rem 0;
         display: flex;
         justify-content: center;
-        // align-items: center;
 
         input {
           border: none;

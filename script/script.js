@@ -1,4 +1,4 @@
-// ---------------- Scroll To Top Button -------------------
+// -- Scroll To Top Button -- //
 const mybutton = document.querySelector(".scroll__btn");
 
 window.onscroll = function () {
@@ -20,9 +20,7 @@ function topFunction() {
 
 mybutton.addEventListener("click", topFunction);
 
-// ------xxx---------- Scroll To Top Button -------xxx------------
-
-// ----------------- Dark and Light Theme ----------------------
+// -- Dark and Light Theme -- //
 
 window.addEventListener("load", () => {
   const storedTheme = localStorage.getItem("theme");
@@ -46,9 +44,7 @@ sun.addEventListener("click", () => {
   localStorage.setItem("theme", "light");
 });
 
-// ------xxx----------- Dark and Light Theme ----------xxx------------
-
-// --------------- Search Button ----------------------- //
+// -- Search Button -- //
 
 const searchIcon = document.querySelector(".searchIcon");
 const serachModal = document.querySelector(".serachModal");
@@ -76,9 +72,8 @@ function openSearch() {
 searchIcon.addEventListener("click", openSearch);
 blurBg.addEventListener("click", closeSearch);
 
-// ------xxx--------- Search Button --------------xxx--------- //
+// -- Hamburger Menu -- //
 
-// --------------- Hamburger Menu ------------------------------ //
 const hamburger = document.querySelector(".hamburgerMenu");
 const navbarMenu = document.querySelector(".navbarMenuR");
 
@@ -87,9 +82,7 @@ hamburger.addEventListener("click", () => {
   navbarMenu.classList.toggle("activeMenu");
 });
 
-// ----xxx-------- Hamburger Menu --------------xxx---------------- //
-
-// ------------------- Auction Section countDown ---------------------- //
+// -- Auction Section countDown -- //
 
 const countDown = document.querySelectorAll(".countDown");
 
@@ -115,26 +108,12 @@ countDown.forEach((item) => {
   }, 1000);
 });
 
-//
+// -- Navbar on scroll -- //
 
-// ------------------- Auction Section like button ---------------------- //
-
-// const likeBtns = document.querySelectorAll(".likeBtn");
-// const likenumbs = document.querySelectorAll(".likenumbs");
-
-// likeBtns.forEach((likeBtn) => {
-//   likeBtn.addEventListener("click", () => {
-//     likenumbs.forEach((likeNumb) => {
-
-//     });
-//   });
-// });
-
-// -------------------------- Navbar scroll ----------------------//
 const nav = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 0) {
+  if (window.scrollY > 10) {
     nav.classList.add("navScroll");
   } else {
     nav.classList.remove("navScroll");
