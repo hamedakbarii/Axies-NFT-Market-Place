@@ -1089,10 +1089,10 @@ button {
   border-bottom: 1px solid #bcb8ee !important;
 }
 .light header nav .navbar__title span {
-  color: black;
+  color: black !important;
 }
 .light header nav .navbarMenu li a {
-  color: #414144;
+  color: #414144 !important;
 }
 .light header nav .navbarMenu li:hover {
   background-color: #a2a2a8;
@@ -1101,7 +1101,7 @@ button {
   background-color: #a2a2a8;
 }
 .light header nav .navbarMenu li .navbarMegaMenu li {
-  color: #414144;
+  color: #414144 !important;
 }
 .light header nav .navbarMenuR {
   background-color: whitesmoke;
@@ -1210,6 +1210,55 @@ button {
   color: black;
 }
 .light #footer {
+  background-color: #333;
+}
+
+.lightExplore {
+  background-color: var(--light-color);
+}
+.lightExplore #header button {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+.lightExplore #header button:hover {
+  background-color: var(--lightpurple-color);
+  color: var(--light-color);
+}
+.lightExplore #picks .picks__title h2,
+.lightExplore #picks p {
+  color: var(--dark-color);
+}
+.lightExplore #picks .picks__items .picks__items--item {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.lightExplore #picks .picks__items .picks__items--item h2 {
+  color: var(--dark-color);
+}
+.lightExplore #picks .picks__items .picks__items--item .item--bottom {
+  border-bottom: 1px solid gray;
+}
+.lightExplore #picks .picks__items .picks__items--item .item--bottom .item--bottom__left .item--bottom__left--right h4 {
+  color: var(--dark-color);
+}
+.lightExplore #picks .picks__items .picks__items--item .item--bottom .item--bottom__right .btn {
+  color: var(--light-color);
+}
+.lightExplore #picks .picks__items .picks__items--item .item__footer .footer__left h6 {
+  color: var(--dark-color);
+}
+.lightExplore #picks .picks__items .picks__items--item .item__footer .footer__left .footer__left--text p {
+  color: var(--dark-color);
+}
+.lightExplore #picks button {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+.lightExplore #picks button:hover {
+  background-color: var(--lightpurple-color);
+  color: var(--light-color);
+}
+.lightExplore #footer {
   background-color: #333;
 }
 
@@ -1491,7 +1540,7 @@ button {
   font-size: 0.7rem;
 }
 
-.picks__title--left select {
+#picks .picks__title--left select {
   background-color: #343444;
   padding: 0.5rem;
   color: white;
@@ -1499,24 +1548,11 @@ button {
   border: none;
   font-size: 1rem;
 }
-.picks__title--left select option {
+#picks .picks__title--left select option {
   background-color: #343444;
   padding: 0.5rem;
   color: white;
   border-radius: 0.2rem;
   border: none;
   font-size: 1rem;
-}
-
-.light #header nav .navLeft .navbar__title span {
-  color: var(--light-color);
-}
-.light #header nav .navLeft .navbarMenu .navbarMenuUl li {
-  color: var(--light-color);
-}
-.light #header nav .navLeft .navbarMenu .navbarMenuUl li a {
-  color: var(--light-color);
-}
-.light #header nav .navRight .search i {
-  color: var(--light-color);
 }/*# sourceMappingURL=main.css.map */

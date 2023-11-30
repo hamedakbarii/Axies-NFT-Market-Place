@@ -4,7 +4,7 @@ window.addEventListener("load", () => {
   if (storedTheme === "dark") {
     document.body.className = "dark";
   } else {
-    document.body.className = "light";
+    document.body.className = "lightExplore";
   }
 });
 
@@ -15,7 +15,8 @@ moon.addEventListener("click", () => {
   document.body.className = "dark";
   localStorage.setItem("theme", "dark");
 });
+
 sun.addEventListener("click", () => {
-  document.body.className = "light";
+  document.body.className = "lightExplore";
   localStorage.setItem("theme", "light");
 });

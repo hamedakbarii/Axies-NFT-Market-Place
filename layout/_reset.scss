@@ -104,7 +104,7 @@ button {
 
       .navbar__title {
         span {
-          color: black;
+          color: black !important;
         }
       }
 
@@ -113,7 +113,7 @@ button {
 
         li {
           a {
-            color: #414144;
+            color: #414144 !important;
           }
           &:hover {
             background-color: #a2a2a8;
@@ -122,7 +122,7 @@ button {
           .navbarMegaMenu {
             background-color: #a2a2a8;
             li {
-              color: #414144;
+              color: #414144 !important;
             }
           }
         }
@@ -301,6 +301,82 @@ button {
       }
       .seller__items .seller__items--item .sellerUserDetails h2 {
         color: black;
+      }
+    }
+  }
+
+  #footer {
+    background-color: #333;
+  }
+}
+
+.lightExplore {
+  background-color: var(--light-color);
+
+  #header {
+    button {
+      background-color: var(--light-color);
+      color: var(--dark-color);
+
+      &:hover {
+        background-color: var(--lightpurple-color);
+        color: var(--light-color);
+      }
+    }
+  }
+
+  #picks {
+    .picks__title h2,
+    p {
+      color: var(--dark-color);
+    }
+
+    .picks__items .picks__items--item {
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+      h2 {
+        color: var(--dark-color);
+      }
+
+      .item--bottom {
+        .item--bottom__left {
+          .item--bottom__left--right {
+            h4 {
+              color: var(--dark-color);
+            }
+          }
+        }
+        .item--bottom__right {
+          .btn {
+            color: var(--light-color);
+          }
+        }
+
+        border-bottom: 1px solid gray;
+      }
+
+      .item__footer {
+        .footer__left {
+          h6 {
+            color: var(--dark-color);
+          }
+          .footer__left--text {
+            p {
+              color: var(--dark-color);
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      background-color: var(--light-color);
+      color: var(--dark-color);
+
+      &:hover {
+        background-color: var(--lightpurple-color);
+        color: var(--light-color);
       }
     }
   }
